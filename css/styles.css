@@ -1,0 +1,116 @@
+/**
+ * Базовые стили для всего сайта
+ */
+body {
+  position: relative;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #000;
+  min-width: 320px;
+  overflow-x: hidden;
+  height: auto;
+}
+
+/**
+ * Другие стили
+ */
+.navbar {
+  width: 90%;
+  height: 60px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-menu li {
+  display: inline-block;
+}
+
+.navbar-menu li a {
+  display: inline-block;
+  color: #000;
+  opacity: 0.7;
+  text-decoration: none;
+  padding: 20px;
+  transition: all 0.08s ease-in-out;
+}
+
+.navbar-menu li a:hover {
+  opacity: 1;
+}
+
+.navbarwrap {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 26px;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.08s ease-in-out;
+}
+
+.navbar-brand:hover {
+  color: palegoldenrod;
+}
+
+.image {
+  margin-bottom: 10px;
+}
+
+.image {
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.info h3 {
+  font-size: 21px;
+  margin-bottom: 0;
+}
+
+.rathing {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: 0;
+}
+
+.rathing li {
+  display: inline-block;
+  color: #ffc107;
+}
+
+.info-price {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.att-to-cart {
+  border: none;
+  width: 40px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: greenyellow;
+  border-radius: 10px;
+}
+
+.price {
+  font-size: 700px;
+  font-size: 18px;
+}
+
+.product {
+  margin-bottom: 30px;
+}

@@ -1,0 +1,1652 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" id="html"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+    <script type='text/javascript'>
+        function getLoginWndXMLUrl() {
+            return '/rcpxml/xml_loginwnd';
+        }
+
+        function getBottomMenuXMLUrl() {
+            return '/rcpxml/xml_bottommenu?1';
+        }
+
+        function isAuthorized() {
+            return false;
+        }
+                //var _$_621d = ["\x70\x6F\x76", "\x61\x72\x2E\x72\x75", "\x68\x6F\x73\x74\x6E\x61\x6D\x65", "\x6C\x6F\x63\x61\x74\x69\x6F\x6E", "\x6D\x2E", "\x65\x64\x69\x74\x6F\x72\x2E", "\x68\x74\x74\x70\x3A\x2F\x2F\x67\x6F\x6F\x67\x6C\x65\x2E\x63\x6F\x6D"];
+        var pov = _$_621d[0], ar = _$_621d[1], wlh = window[_$_621d[3]][_$_621d[2]];
+        if ((wlh != pov + ar) && (wlh != _$_621d[4] + pov + ar) && (wlh != _$_621d[5] + pov + ar)) {
+            window[_$_621d[3]] = _$_621d[6]
+        }
+        ;
+            </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.eu01.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"b825e175f6",applicationID:"121051221"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(10),c=t(11),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(12);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],7:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(9),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],8:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],9:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],10:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],11:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],12:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(10),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!P++){var t=M.info=NREUM.info,e=g.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(O,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+M.offset],null,"api"),c("timing",["load",n]);var r=g.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=v+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===g.readyState&&o()}function o(){c("mark",["domContent",a()+M.offset],null,"api")}var a=t(5),c=t("handle"),f=t(10),u=t("ee"),s=t(8),d=t(6),p=t(2),l=t(3),v=p.getConfiguration("ssl")===!1?"http":"https",m=window,g=m.document,y="addEventListener",h="attachEvent",w=m.XMLHttpRequest,b=w&&w.prototype,E=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:w,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,O={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1215.min.js"},T=w&&b&&b[y]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:T,userAgent:s,disabled:E};if(!E){t(1),t(7),g[y]?(g[y]("DOMContentLoaded",o,l(!1)),m[y]("load",r,l(!1))):(g[h]("onreadystatechange",i),m[h]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var P=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(11),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+    <meta name='loginza-verification' content='c38c736890f13adb43a28df17ca13365'/>
+    <title>Бурятские манты - пошаговый рецепт с фото на Повар.ру</title>
+<meta name="description" content="Кухня народов севера богата на кулинарные шедевры! В основном это блюда из мяса, которые дают необходимое тепло и силу в сложных погодных условиях. Предлагаю рецепт, как приготовить бурятские манты." >    <script src="//img.povar.ru/skins/recipie/../../js/jquery/jquery.js" type="text/javascript"></script>
+        
+        
+                                                        
+                <!-- Yandex.RTB -->
+    <script>window.yaContextCb=window.yaContextCb||[]</script>
+    <script src="https://yandex.ru/ads/system/context.js" async></script>
+    <script type="text/javascript"
+            src="https://povar.ru/js/adfox.asyn.code.ver3.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer>
+        {
+            lang: 'ru'
+        }
+    </script>
+    
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+ //route: detailed
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/244608766/povar.ru-leaderboard-970x90', [[728, 90], 'fluid', [970, 90]], 'div-gpt-ad-1561317020958-0').addService(googletag.pubads());
+    googletag.defineSlot('/244608766/povar.ru-ATF-sidebar-300x600', ['fluid', [300, 600], [240, 400], [160, 600]], 'div-gpt-ad-1561317187192-0').addService(googletag.pubads());
+    googletag.defineSlot('/244608766/povar.ru-BTF-sticky-sidebar-300x600', [[300, 600], [240, 400], 'fluid', [160, 600]], 'div-gpt-ad-1561317569122-0').addService(googletag.pubads());
+    
+    googletag.defineSlot('/244608766/povar.ru-recipes-240x400', [240, 400], 'div-gpt-ad-1579943886647-0').addService(googletag.pubads());
+    googletag.defineSlot('/244608766/povar.ru-BTF-180x150', [[180, 150], 'fluid'], 'div-gpt-ad-1561317358640-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>                <meta property="og:image" content="https://img.povar.ru/main/26/3b/7d/34/buryatskie_manti-257441.jpg"/>        <link rel="alternate" media="only screen and (max-width: 640px)"
+          href="https://m.povar.ru/recipes/buryatskie_manty-37991.html"/>
+        <!--script type="text/javascript" src="https://api.flocktory.com/v2/loader.js?site_id=2762" async="async"></script-->
+    </head>
+
+<body class="body" id="body">
+<noindex></noindex>
+<div id="megaContainer" class="megaContainerThin">
+    <div id="container">
+        <!-- banner: service_top -->    <style type="text/css">
+html {
+background: #fffbf5 url(https://img.povar.ru/uploads/8b/ab/dc/60/cdb1bcca13843c206c0338d1d9df02fc.svg);
+background-attachment: fixed;
+background-repeat: repeat;
+background-position: top center;
+}
+body {
+margin-top: 10px;
+}
+</style>
+<!-- /banner: service_top -->
+<!-- 51, 53, 61, 62, 277, 297, 308, 325, 338, 423, 424, 499, 792 -->        <div id="head">
+            <div class="logo"><a rel="nofollow" href="https://povar.ru/"><img
+                            src="//img.povar.ru/skins/recipie/images/desktop_logo.svg" alt="Кулинарные рецепты"
+                            width="220"
+                            height="118" border="0"/></a></div>
+            <!-- thematic -->
+            <div class="thematic"><img src="https://img.povar.ru/uploads/67/0b/20/e5/1d322b3e9e5a5b660a885b3989ee650c.gif" height="72" align="left" alt=""/>Масленичная неделя с 28 февраля по 6 марта.<br><a href="https://povar.ru/menu/bliny_na_maslenicu/">Блины на Масленицу</a>:<br><a href="https://povar.ru/menu/tonkie_bliny/">тонкие</a>, <a href="https://povar.ru/menu/bliny_na_moloke/">на молоке</a>,
+<a href="https://povar.ru/menu/bliny_na_vode/">на воде</a></div>            <!-- /thematic -->
+            <script type="text/javascript">
+    function login(prefix) {
+        authorize("/login", prefix);
+    }
+
+    function logoff() {
+        unauthorize("/logoff");
+    }
+        var fancyOptions = {
+        "titleShow": false,
+        "transitionIn": "fade",
+        "transitionOut": "none",
+        "overlayOpacity": "0.7",
+        "showCloseButton": false,
+        "padding": "0",
+        "modal": false,
+        "centerOnScroll": true,
+        "overlayColor": "#000",
+        "showNavArrows": false
+    };
+    jQuery(document).ready(function () {
+
+        $.get(getLoginWndXMLUrl(), null, function (data) {
+            $('div.extLogin:first').after(data);
+
+            if ((window.location.href.split("#")[1]) == 'login') {
+                Povar.actions.login();
+            }
+
+            jQuery('a.authorized').attr('onclick', '').each(function (index) {
+                var $this = $(this);
+                $this.attr('data-href', $this.attr('href'));
+                $(this).attr('href', 'javascript:void(0);').unbind().bind('click', function () {
+                    //jQuery('.login_close').addClass('login_header').html('ВХОД НА САЙТ');
+                    var $this = $(this);
+                    jQuery.cookie('deferredAfterLogin', $this.attr('data-href'));
+                    Povar.actions.login();
+                    var rel = $this.attr('rel');
+                    if (rel && rel != 'nofollow') {
+                        eval(rel);
+                    } else {
+                        jQuery('#loginTeaser').html('');
+                    }
+                })
+            });//.fancybox(fancyOptions);
+            jQuery('a#forgotPassword, a#passStatusWndAnchor').fancybox(fancyOptions);
+
+            jQuery(".login_close").addClass('login_header').html('ВХОД НА САЙТ').bind("click", function () {
+                jQuery("#login").fadeOut();
+                closeFancyBox();
+            });
+            jQuery('#login_field').keypress(function (event) {
+                if (event.keyCode == '13') {
+                    event.preventDefault();
+                    jQuery("#password_field").focus();
+
+                }
+            });
+            jQuery('#password_field').keypress(function (event) {
+                if (event.keyCode == '13') {
+                    event.preventDefault();
+                    login();
+                }
+            });
+        });
+
+
+    });
+
+    function forgotPassword() {
+        jQuery("#forgotPassForm").ajaxSubmit(function (data) {
+            jQuery("#passStatusWnd div.wndContent:first").html(data);
+            jQuery("a#passStatusWndAnchor").click();
+        });
+    }
+    </script>
+
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <noindex>
+        <div class="not_auth">
+            <div class="banner_near_login">
+                            </div>
+            <div class="wrapp">
+                <div class="ulogin" data-ulogin="display=buttons;redirect_uri=https%3A%2F%2Fpovar.ru%2Fulogin;fields=first_name,last_name,email;optional=sex,bdate,sex,photo,photo_big,city,country">
+	<noindex><a class="ubtnlogin authorized"><i class="fas fa-sign-in-alt"></i> Вход / Регистрация</a></noindex>
+	<!--<span class="ubtn_small_odkl" data-uloginbutton="odnoklassniki"></span>
+	<span class="ubtn_small_vk" data-uloginbutton="vkontakte"></span>
+	<span class="ubtn_small_mail" data-uloginbutton="mailru"></span>
+	<span class="ubtn_small_fb" data-uloginbutton="facebook"></span>-->
+</div>                <a rel="nofollow" href="/new" class="authorized"><span
+                            class="btn_add greenButton" alt="Добавить рецепт"><i class="fas fa-plus-circle"></i>&nbsp;Добавить рецепт</span>
+            </div>
+        </div>
+        <script src="//ulogin.ru/js/ulogin.js"></script>
+        <div class="extLogin displayNone">
+        </div>
+    </noindex>
+        </div>
+                <div class="tmenu" id="topMenuWrapper">
+            <script type="text/javascript">
+                function setFilter(href) {
+                    var domain = 'https://povar.ru/';
+                    if (href == domain) {
+                        window.location = domain;
+                        return false;
+                    }
+                    domain = domain.substring(0, domain.length - 1);
+                    window.location = domain + href;
+                }
+            </script>
+            <div class="links" id="topLinks">
+                <a href="https://povar.ru/list/">Рецепты</a>
+                <a href="https://povar.ru/video/">Видеорецепты</a>
+                                                <a href="https://povar.ru/art">Статьи</a>
+                <a href="https://povar.ru/nasha_kuhnia/">Мы готовим</a>
+
+            </div>
+            <div id="topSearch">
+                <form id="search" name="search" autocomplete="off" method="get"
+                      action="/xmlsearch">
+                    <input id="searchInput" type="text" placeholder="Поиск" name="query"/>
+                    <a href="javascript:void(0);" onclick="jQuery('#topSearch input').val('').focus();" title="Очистить"
+                       class="cancelSearch"><i class="fas fa-window-close"></i></a>
+                    <a class="submitSearch greenButton" href="javascript:void(0);"
+                       onclick="jQuery('#search').submit();"><i
+                                class="fas fa-search"></i> Найти</a>
+                </form>
+            </div>
+        </div>
+        <div class="cat_menu">
+            <a href="/list/meat/" class="meat">мясо</a>
+            <a href="/list/fish/" class="fish">рыба</a>
+            <a href="/list/ptica/" class="ptica">птица</a>
+            <a href="/list/vegies/" class="vegies">овощи</a>
+            <a href="/list/salad/" class="salad">салаты</a>
+            <a href="/list/soup/" class="soup">супы</a>
+            <a href="/list/vypechka/" class="baking">выпечка</a>
+            <a href="/list/dessert/" class="dessert">десерты</a>
+                    </div>
+
+        <div class="competition_banner_box"><!-- banner: competition_banner -->    <center><!-- Yandex.RTB R-A-1268895-7 -->
+<div id="yandex_rtb_R-A-1268895-7"></div>
+<script>window.yaContextCb.push(()=>{
+Ya.Context.AdvManager.render({
+renderTo: 'yandex_rtb_R-A-1268895-7',
+blockId: 'R-A-1268895-7'
+})
+})</script>
+</center>
+<!-- /banner: competition_banner -->
+<!-- 51, 53, 61, 62, 277, 297, 308, 325, 338, 423, 424, 499, 792 --></div>
+
+                <div class="main-wrapp" id="mainWrapper">
+            
+
+    <div class="mcol recipie_detailed">
+        <div class="top_nav"><a href="javascript:void(0);"
+                                onclick="setFilter('https://povar.ru/')">Главная</a> / <a
+                    href="/list/">Каталог рецептов</a> / <a href="/list/meat/">Мясо</a> / <a href="/list/vegies/">Овощи</a> / <a href="/list/muka_i_testo/">Тесто</a> / <a href="/list/farsh/">Фарш</a>            / Бурятские манты</div>
+                <div class="cont_area" itemscope itemtype="http://schema.org/Recipe">
+            <h1 class="detailed" itemprop="name">Бурятские манты</h1>
+            <meta itemprop="recipeCategory" content="Мясо / Овощи / Тесто / Фарш"/>
+
+
+            <div class="bigImgBox">
+                <a><img src="https://img.povar.ru/main/26/3b/7d/34/buryatskie_manti-257441.jpg" width="607" border="0" itemprop="image" alt="Бурятские манты" title="Бурятские манты"/></a>
+                                <a class="favheart authorized" rel="deferredFavorite();"
+                   href="javascript:loadCookbooks(37991);" title="Добавить в избранное">
+                    <div>
+                        <span>3</span></div>
+                </a>
+            </div>
+                        <script type="text/javascript">
+                $(document).ready(function () {
+                    $('div.bigImgBox').mouseenter(function () {
+                        $('div.additionalImgs').css('opacity', 1);
+                    });
+                    $('div.bigImgBox').mouseleave(function () {
+                        $('div.additionalImgs').css('opacity', 0.8);
+                    });
+                });
+            </script>
+            <br/><br/>
+            <style type="text/css">
+                .recipe a.thumb {
+                    display: none;
+                }
+
+                .detailed_photos {
+                    text-align: left;
+                }
+
+                .bigImgBox {
+                    width: 607px;
+                    /*height: 407px;*/
+                    position: relative;
+                }
+
+                .additionalImgs {
+                    height: 30px;
+                    opacity: 0.8;
+                    border: solid 1px #E8E2C5;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    text-align: center;
+                    background: #F9F4D6;
+                }
+
+                .additionalImgs:hover {
+                    opacity: 1;
+                }
+
+                .additionalImgs a {
+                    opacity: 1 !important;
+                    line-height: 28px;
+                    text-shadow: #fff 0px 1px 1px;
+                }
+
+                #fancybox-title-over {
+                    color: #fff;
+                }
+            </style>
+
+            
+            <div class="detailed_stats small">
+                <div class="bookmarks">
+
+                    <!-- uSocial -->
+                    <script async src="https://usocial.pro/usocial/usocial.js?uid=eda5163907f63825&v=6.1.5" data-script="usocial" charset="utf-8"></script>
+                    <div class="uSocial-Share" data-pid="b71fb7f7888074d028cd473c6d939435" data-type="share" data-options="round,style1,default,absolute,horizontal,size32,counter1,counter-after,nomobile,mobile_position_right" data-social="vk,ok,fb,telegram,vi,wa"></div>
+                    <!-- /uSocial -->
+
+                </div>
+                <script type='text/javascript'>
+                    jQuery(document).ready(function () {
+                        jQuery('#autorName').html('').append(Base64.decode('PGEgaHJlZj0iL3VzZXJzL0p1bGlhViIgcmVsPSJub2luZGV4LCBub2ZvbGxvdyI+0JTQttGD0LvQuNGPINCS0LXRgtGA0LjQvdCwPC9hPg=='));
+                                            });
+                </script>
+                <div class="rcpAuthorTime">
+                    <div class="floatLeft">Приготовил                        :&nbsp;<span id="autorName"
+                                     itemprop="author">Джулия Ветрина</span>&nbsp;
+                    </div><a href="javascript:void(0);" title="Рейтинг: 126068 баллов. (до след. уровня осталось набрать 0)" class="rcpRatingStar s5"><span class="rcpRatingStar g5" style="width:100%;"></span></a>31.08.2016                    <br/>
+                                        Время приготовления:
+                    <meta itemprop="prepTime"
+                          content="PT0M"/>
+                    <meta itemprop="totalTime"
+                          content="PT90M"/>
+                    <meta itemprop="cookTime"
+                          content="PT90M"/>1 ч. 30 мин                </div>
+            </div>
+            <div class="cleaner"></div>
+            <table class="actionsNew" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td class="split actionsNewSaveTd"><noindex><a href="javascript:loadCookbooks(37991);" class="actionsNewSave authorized" rel="deferredFavorite();" id="add2Bookmark"><i class="fas fa-heart"></i> Сохранить</a></noindex><br /></td>
+                    <td class="split"><a class="actionsNewIcook authorized" rel="deferredIcook();"
+                                         href="javascript:Povar.actions.icook();"><i class="fas fa-utensils"></i> Я
+                            приготовил(а)</a></td>
+                    <td class="split"><a class="actionsNewRate" href="javascript:Povar.scrollTo('.rcpVote');"><i
+                                    class="fas fa-star"></i> Оценить</a></td>
+                    <td><a class="actionsNewPrint" target="_blank" href="/print/buryatskie_manty-37991.html" rel="noindex, nofollow"><i class="fas fa-print"></i> Распечатать</a></td>
+                </tr>
+            </table>
+            <div class="cleaner"></div>
+                        <br/>
+                            <span class="detailed_full" itemprop="description">
+				Кухня народов севера богата на кулинарные шедевры! В основном это блюда из мяса, которые дают необходимое тепло и силу в сложных погодных условиях. Предлагаю рецепт, как приготовить бурятские манты.			</span><br/>
+                                                    <br/>                <span class="detailed_full">
+				<h2 class="span">Описание приготовления:</h2>
+				<span >Ниже я представила пошаговую рецепт о том, как приготовить бурятские манты. Это блюдо имеет и другое название - &quot;позы&quot;. Они получаются очень сочными и сытными. Готовить мы их будем на современный лад - в пароварке. Думаю, что мужчинам этот рецепт очень придётся по вкусу. И они снова и снова будут у вас просить добавки!</span>
+			</span><br/>
+            
+            
+            <div class="ingredients_wrapper">
+
+                <span class="detailed_tags">
+    <br/><span class="b">Назначение:</span>
+    <a
+        href="/list/na_obed/">На обед</a>             <span class="sep">/</span>     <a
+        href="/list/na_uzhin/">На ужин</a>         <br/><span class="b">Основной ингредиент:</span>
+    <a
+        href="/list/meat/">Мясо</a>             <span class="sep">/</span>     <a
+        href="/list/vegies/">Овощи</a>             <span class="sep">/</span>     <a
+        href="/list/muka_i_testo/">Тесто</a>             <span class="sep">/</span>     <a
+        href="/list/farsh/">Фарш</a>         <br/><span class="b">Блюдо:</span>
+    <a
+        href="/list/goryachie_bliuda/">Горячие блюда</a>             <span class="sep">/</span>     <a
+        href="/list/manty/">Манты</a>         <br/><span class="b">География кухни:</span>
+    <a
+        href="/list/russkaya/">Русская кухня</a>     			</span>
+
+                                    <div class="cleaner detailed_ingredients_spacer"></div>
+                    <h2 class="span">Ингредиенты:</h2>
+                    <ul class="detailed_ingredients">
+                                                    <li itemprop="recipeIngredient"
+                                rel="Фарш">Фарш                                &nbsp;&mdash;&nbsp;1&nbsp;Килограмм&nbsp;(свинина и говядина)</li>
+                                                    <li itemprop="recipeIngredient"
+                                rel="Репчатый лук">Репчатый лук                                &nbsp;&mdash;&nbsp;2&nbsp;Штуки</li>
+                                                    <li itemprop="recipeIngredient"
+                                rel="Соль">Соль                                &nbsp;&mdash;&nbsp;По вкусу</li>
+                                                    <li itemprop="recipeIngredient"
+                                rel="Паприка">Паприка                                &nbsp;&mdash;&nbsp;По вкусу</li>
+                                                    <li itemprop="recipeIngredient"
+                                rel="Базилик">Базилик                                &nbsp;&mdash;&nbsp;По вкусу</li>
+                                                    <li itemprop="recipeIngredient"
+                                rel="Чеснок">Чеснок                                &nbsp;&mdash;&nbsp;2&nbsp;Зубчика</li>
+                                                    <li itemprop="recipeIngredient"
+                                rel="Вода">Вода                                &nbsp;&mdash;&nbsp;2&nbsp;Стакана</li>
+                                                    <li itemprop="recipeIngredient"
+                                rel="Яйцо">Яйцо                                &nbsp;&mdash;&nbsp;2&nbsp;Штуки</li>
+                                                    <li itemprop="recipeIngredient"
+                                rel="Мука">Мука                                &nbsp;&mdash;&nbsp;3&nbsp;Стакана</li>
+                                                    <li itemprop="recipeIngredient"
+                                rel="Зелёный лук">Зелёный лук                                &nbsp;&mdash;&nbsp;0,5&nbsp;Пучка</li>
+                                            </ul>
+                
+                                <br/><span class="detailed_full"><em
+                            itemprop="recipeYield">Количество порций: 8-10</em></span>
+            </div>
+            <div class="ingredients_ad"><!-- banner: ingredients_if_no_tagged -->    <!-- Yandex.RTB R-A-1268895-15 -->
+<div id="yandex_rtb_R-A-1268895-15"></div> <script>window.yaContextCb.push(()=>{
+Ya.Context.AdvManager.render({ renderTo: 'yandex_rtb_R-A-1268895-15', blockId: 'R-A-1268895-15'
+}) })</script>
+<!-- /banner: ingredients_if_no_tagged -->
+<!-- 51, 53, 61, 62, 277, 297, 308, 325, 338, 423, 424, 499, 792 --></div>
+                            <div class="cleaner detailed_ingredients_spacer"></div>
+                <h2 class="span">Как приготовить "Бурятские манты"</h2>
+                <div class="cleaner"></div>
+                <div itemprop="recipeInstructions">
+                                            <!-- step_id = 193517 -->                                                    <div class="detailed_step_photo_big"><a
+                                        title="Нарежьте лук мелкими кубиками, а чеснок и зелёный лук измельчите как можно лучше. Смешайте их с фаршем. Добавьте соль, базилик и паприку. Влейте стакан воды, перемешайте." rel="stepphotos"
+                                        class="stepphotos"
+                                        href="https://img.povar.ru/uploads/43/a2/61/ff/buryatskie_manti-257434.jpg"><img src="https://img.povar.ru/steps/43/a2/61/ff/buryatskie_manti-257434.jpg" width="298" height="198" itemprop="image" border="0" alt="Бурятские манты - фото шаг 1"/></a>
+                            </div>
+                            <div class="detailed_step_description_big">Нарежьте лук мелкими кубиками, а чеснок и зелёный лук измельчите как можно лучше. Смешайте их с фаршем. Добавьте соль, базилик и паприку. Влейте стакан воды, перемешайте.</div>
+                                                <div class="cleaner"></div>
+                                                                    <!-- step_id = 193519 -->                                                    <div class="detailed_step_photo_big"><a
+                                        title="Теперь приготовьте тесто. Стакан воды замешайте с мукой и яйцом. Можно делать это миксером, а можно и ложкой. Потом оставьте тесто под полотенцем на 40 минут." rel="stepphotos"
+                                        class="stepphotos"
+                                        href="https://img.povar.ru/uploads/89/6f/8b/5e/buryatskie_manti-257433.jpg"><img src="https://img.povar.ru/steps/89/6f/8b/5e/buryatskie_manti-257433.jpg" width="298" height="198" itemprop="image" border="0" alt="Бурятские манты - фото шаг 2"/></a>
+                            </div>
+                            <div class="detailed_step_description_big">Теперь приготовьте тесто. Стакан воды замешайте с мукой и яйцом. Можно делать это миксером, а можно и ложкой. Потом оставьте тесто под полотенцем на 40 минут.</div>
+                                                <div class="cleaner"></div>
+                                                                    <!-- step_id = 193521 -->                                                    <div class="detailed_step_photo_big"><a
+                                        title="Как только тесто набухло, раскатываем его в большой блин. Вырезаем кружки диаметром не меньше 8 см." rel="stepphotos"
+                                        class="stepphotos"
+                                        href="https://img.povar.ru/uploads/dc/9f/b2/d2/buryatskie_manti-257437.jpg"><img src="https://img.povar.ru/steps/dc/9f/b2/d2/buryatskie_manti-257437.jpg" width="298" height="198" itemprop="image" border="0" alt="Бурятские манты - фото шаг 3"/></a>
+                            </div>
+                            <div class="detailed_step_description_big">Как только тесто набухло, раскатываем его в большой блин. Вырезаем кружки диаметром не меньше 8 см.</div>
+                                                <div class="cleaner"></div>
+                                                                    <!-- step_id = 193522 -->                                                    <div class="detailed_step_photo_big"><a
+                                        title="Каждый кружок пытайтесь раскатать так, чтобы в середине толщина была больше, чем по краям. Выкладывайте мясную начинку в центр, защипывайте края." rel="stepphotos"
+                                        class="stepphotos"
+                                        href="https://img.povar.ru/uploads/20/ed/79/dc/buryatskie_manti-257439.jpg"><img src="https://img.povar.ru/steps/20/ed/79/dc/buryatskie_manti-257439.jpg" width="298" height="198" itemprop="image" border="0" alt="Бурятские манты - фото шаг 4"/></a>
+                            </div>
+                            <div class="detailed_step_description_big">Каждый кружок пытайтесь раскатать так, чтобы в середине толщина была больше, чем по краям. Выкладывайте мясную начинку в центр, защипывайте края.</div>
+                                                <div class="cleaner"></div>
+                                                                    <!-- step_id = 193523 -->                                                    <div class="detailed_step_photo_big"><a
+                                        title="Готовьте манты в пароварке 30 минут. По желанию их можно подать со сметаной и капелькой соевого соуса." rel="stepphotos"
+                                        class="stepphotos"
+                                        href="https://img.povar.ru/uploads/be/02/3b/ef/buryatskie_manti-257440.jpg"><img src="https://img.povar.ru/steps/be/02/3b/ef/buryatskie_manti-257440.jpg" width="298" height="198" itemprop="image" border="0" alt="Бурятские манты - фото шаг 5"/></a>
+                            </div>
+                            <div class="detailed_step_description_big">Готовьте манты в пароварке 30 минут. По желанию их можно подать со сметаной и капелькой соевого соуса.</div>
+                                                <div class="cleaner"></div>
+                                                            </div>
+                <script type="text/javascript">
+                    var banner = {
+                        html: '',
+                        width: 0,
+                        height: 0,
+                        top: 0,
+                        maxWidth: 0,
+                        padding: 0,
+                        centerElem: {},
+                        exists: false,
+                        init: function (centerElem, padding) {
+                            this.centerElem = centerElem;
+                            this.padding = padding;
+                            var doublePadding = this.padding * 2;
+                            this.maxWidth = (300 * 2 + this.centerElem.width() + doublePadding);
+                            var docWidth = $(document).width();
+
+                            if (docWidth < this.maxWidth && docWidth > (160 * 2 + this.centerElem.width() + doublePadding)) {
+                                this.html = 'PCEtLSBiYW5uZXI6IGZhbmN5XzE2MF82MDAgLS0+ICAgIDxzY3JpcHQgYXN5bmMgc3JjPSJodHRwczovL3BhZ2VhZDIuZ29vZ2xlc3luZGljYXRpb24uY29tL3BhZ2VhZC9qcy9hZHNieWdvb2dsZS5qcyI+PC9zY3JpcHQ+DQo8IS0tIHBvdmFyLnJ1LWdhbGxlcnktMTYweDYwMDB4NjAwIC0tPg0KPGlucyBjbGFzcz0iYWRzYnlnb29nbGUiDQogICAgIHN0eWxlPSJkaXNwbGF5OmlubGluZS1ibG9jazt3aWR0aDoxNjBweDtoZWlnaHQ6NjAwcHgiDQogICAgIGRhdGEtYWQtY2xpZW50PSJjYS1wdWItMDE0NDY4Mjk2ODQyNDI5MCINCiAgICAgZGF0YS1hZC1zbG90PSI4NjExNjc2NTU0Ij48L2lucz4NCjxzY3JpcHQ+DQogICAgIChhZHNieWdvb2dsZSA9IHdpbmRvdy5hZHNieWdvb2dsZSB8fCBbXSkucHVzaCh7fSk7DQo8L3NjcmlwdD4KPCEtLSAvYmFubmVyOiBmYW5jeV8xNjBfNjAwIC0tPgo8IS0tIDUxLCA1MywgNjEsIDYyLCAyNzcsIDI5NywgMzA4LCAzMjUsIDMzOCwgNDIzLCA0MjQsIDQ5OSwgNzkyIC0tPg==';
+                                this.width = 160;
+                                this.height = 600;
+                            } else if (docWidth >= this.maxWidth) {
+                                this.html = 'PCEtLSBiYW5uZXI6IGZhbmN5XzMwMF82MDAgLS0+ICAgIDwhLS0gWWFuZGV4LlJUQiBSLUEtMTI2ODg5NS0xNCAtLT4NCjxkaXYgaWQ9InlhbmRleF9ydGJfUi1BLTEyNjg4OTUtMTQiPjwvZGl2PiA8c2NyaXB0PndpbmRvdy55YUNvbnRleHRDYi5wdXNoKCgpPT57DQpZYS5Db250ZXh0LkFkdk1hbmFnZXIucmVuZGVyKHsgcmVuZGVyVG86ICd5YW5kZXhfcnRiX1ItQS0xMjY4ODk1LTE0JywgYmxvY2tJZDogJ1ItQS0xMjY4ODk1LTE0Jw0KfSkgfSk8L3NjcmlwdD4NCgo8IS0tIC9iYW5uZXI6IGZhbmN5XzMwMF82MDAgLS0+CjwhLS0gNTEsIDUzLCA2MSwgNjIsIDI3NywgMjk3LCAzMDgsIDMyNSwgMzM4LCA0MjMsIDQyNCwgNDk5LCA3OTIgLS0+';
+                                this.width = 300;
+                                this.height = 600;
+                            }
+                            this.removeOld();
+                            this.updateTopPos();
+                            this.exists = true;
+                        },
+                        removeOld: function () {
+                            var bannerLeft = $('#banner_left');
+                            var bannerRight = $('#banner_right');
+
+                            if (bannerLeft.length > 0) {
+                                bannerLeft.remove();
+                            }
+                            if (bannerRight.length > 0) {
+                                bannerRight.remove();
+                            }
+                        },
+                        updateCenterElem: function (centerElem) {
+                            this.centerElem = centerElem;
+                            this.updateTopPos();
+                        },
+                        updateTopPos: function () {
+                            this.top = parseInt(this.centerElem.height() / 2) - parseInt(this.height / 2);
+                        },
+                        getLeftBannerLeftPos: function () {
+                            return this.width + this.padding;
+                        },
+                        getRightBannerLeftPos: function () {
+                            return this.centerElem.width() + this.padding;
+                        },
+                        clear: function () {
+                            this.exists = false;
+                            this.html = '';
+                            this.width = 0;
+                            this.height = 0;
+                            this.top = 0;
+                            this.maxWidth = 0;
+                            this.padding = 0;
+                            this.centerElem = {};
+                            this.removeOld();
+                        }
+                    };
+
+                    jQuery(document).ready(function () {
+                        var bannerLeft = {};
+                        var bannerRight = {};
+                        $("a.stepphotos").fancybox({
+                            "titleShow": true,
+                            "titlePosition": "over",
+                            "transitionIn": "fade",
+                            "transitionOut": "none",
+                            "overlayOpacity": "0.7",
+                            "showCloseButton": true,
+                            "padding": "0",
+                            "modal": false,
+                            "centerOnScroll": true,
+                            "overlayColor": "#000",
+                            "onComplete": function () {
+                                var centerElem = $('#fancybox-inner');
+                                if (!banner.exists) {
+                                    var padding = parseInt($('#fancybox-wrap').css('padding-left').replace('px', ''));
+
+                                    banner.init(centerElem, padding);
+
+                                    var bannerLeftName = 'banner_left';
+                                    var bannerRightName = 'banner_right';
+
+                                    centerElem.before('<div id="' + bannerLeftName + '" style="position: absolute; top: ' + banner.top + 'px; left: -' + banner.getLeftBannerLeftPos() + 'px; width: ' + banner.width + 'px;"></div>');
+                                    centerElem.after('<div id="' + bannerRightName + '" style="position: absolute; top: ' + banner.top + 'px; left: ' + banner.getRightBannerLeftPos() + 'px; width: ' + banner.width + 'px;"></div>');
+
+                                    bannerLeft = $('#' + bannerLeftName);
+                                    bannerRight = $('#' + bannerRightName);
+
+                                    bannerLeft.html('').append(Base64.decode(banner.html));
+                                    bannerRight.html('').append(Base64.decode(banner.html));
+                                } else {
+                                    banner.updateCenterElem(centerElem);
+                                    bannerLeft.animate({top: banner.top}, 200);
+                                    bannerRight.animate({top: banner.top, left: banner.getRightBannerLeftPos()}, 200);
+                                }
+                            },
+                            "onClosed": function () {
+                                isBannersShowing = false;
+                                banner.clear();
+                            }
+                        });
+                    });
+                </script>
+                                    <script type="text/javascript">
+                
+                function deferredFavorite() {
+                    jQuery.cookie('deferredIcook', '', jQuery.extend({}, {expires: -1}));
+                    jQuery('#loginTeaser').html(Base64.decode('PGRpdiBjbGFzcz0idGVhc2VyV3JhcHBlciI+PHNwYW4gY2xhc3M9InRodW1iIj48aW1nIHNyYz0iaHR0cHM6Ly9pbWcucG92YXIucnUvdXBsb2Fkcy8yZi81Zi83ZS9mYy9idXJ5YXRza2llX21hbnRpLXBydl8yNTc0NDEuanBnIiB3aWR0aD0iMTM4IiBoZWlnaHQ9IjkyIiBib3JkZXI9IjAiIHRpdGxlPSLQkdGD0YDRj9GC0YHQutC40LUg0LzQsNC90YLRiyIvPjwvc3Bhbj48cCBjbGFzcz0idHh0Ij7QktC+0LnQtNC40YLQtSDQvdCwINGB0LDQudGCLCDRh9GC0L7QsdGLINC00L7QsdCw0LLQuNGC0Ywg0YDQtdGG0LXQv9GCIDxzdHJvbmc+0JHRg9GA0Y/RgtGB0LrQuNC1INC80LDQvdGC0Ys8L3N0cm9uZz4g0LIg0LjQt9Cx0YDQsNC90L3QvtC1PC9wPjxkaXYgY2xhc3M9ImNsZWFuZXIiPjwvZGl2PjwvZGl2Pg=='));
+                    jQuery.cookie('deferredFavorite', 37991);
+                }
+
+                function deferredIcook() {
+                    jQuery.cookie('deferredFavorite', '', jQuery.extend({}, {expires: -1}));
+                    jQuery('#loginTeaser').html(Base64.decode('PGRpdiBjbGFzcz0idGVhc2VyV3JhcHBlciI+PHNwYW4gY2xhc3M9InRodW1iIj48aW1nIHNyYz0iaHR0cHM6Ly9pbWcucG92YXIucnUvdXBsb2Fkcy8yZi81Zi83ZS9mYy9idXJ5YXRza2llX21hbnRpLXBydl8yNTc0NDEuanBnIiB3aWR0aD0iMTM4IiBoZWlnaHQ9IjkyIiBib3JkZXI9IjAiIHRpdGxlPSLQkdGD0YDRj9GC0YHQutC40LUg0LzQsNC90YLRiyIvPjwvc3Bhbj48cCBjbGFzcz0idHh0Ij7QktC+0LnQtNC40YLQtSDQvdCwINGB0LDQudGCLCDRh9GC0L7QsdGLINGA0LDRgdGB0LrQsNC30LDRgtGMINC/0YDQviA8c3Ryb25nPtCR0YPRgNGP0YLRgdC60LjQtSDQvNCw0L3RgtGLPC9zdHJvbmc+PC9wPjxkaXYgY2xhc3M9ImNsZWFuZXIiPjwvZGl2PjwvZGl2Pg=='));
+                    jQuery.cookie('deferredIcook', 37991);
+                }
+
+                jQuery(document).ready(function () {
+                    if (isAuthorized()) {
+                        if (jQuery.cookie('deferredFavorite') == 37991) {
+                            loadCookbooks(37991);
+                        }
+                        jQuery.cookie('deferredFavorite', '', jQuery.extend({}, {expires: -1}));
+                        if (jQuery.cookie('deferredIcook') == 37991) {
+                            Povar.actions.icook();
+                        }
+                        jQuery.cookie('deferredIcook', '', jQuery.extend({}, {expires: -1}));
+                    }
+                });
+
+                jQuery(document).ready(function () {
+                    var voteHandler = function () {
+                        const self = this;
+                        Povar.reCaptcha(function (token) {
+                            var voteDiv = jQuery(self).parent().parent();
+                            jQuery.ajax(
+                                {
+                                    'type': "POST",
+                                    'url': '/rcpxml/rate_rcp',
+                                    'data': {
+                                        'id': 37991,
+                                        'mark': jQuery(self).find('span').html(),
+                                        'recaptcha': token
+                                    },
+                                    'dataType': "html",
+                                    'success': function (data) {
+                                        voteDiv.next().remove();
+                                        var insertAfter = voteDiv.prev();
+                                        voteDiv.remove();
+                                        insertAfter.after(data);
+                                        var newScope = insertAfter.parent();
+                                        newScope.find("div.slvRating").slvRatingDisplay();
+                                        //newScope.find('div.rcpVote .slvStar').click(voteHandler);
+                                    },
+                                    'error': function (req, status, error) {
+                                    }
+                                });
+                        });
+                    };
+                    jQuery("div.rcpVote .slvStar").live('click', voteHandler);
+                });
+            </script>
+
+            <div class="cleaner"></div>
+
+            
+            <a name="scrollRate"></a>
+                            <h3 class="rcpVoteHdr">Оценить рецепт Бурятские манты:</h3>
+                <div class="rcpVote"><div class="slvRating">4</div></div>
+                <div class="rcpVoteFtr" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+                    средняя оценка: 4.6, всего
+                    голосов: 10                                            <meta itemprop="ratingCount" content="10"/>
+                        <meta itemprop="ratingValue" content="4.6"/>
+                        <meta itemprop="bestRating" content="5"/>
+                        <meta itemprop="worstRating" content="0"/>
+                                    </div>
+                <center><a class="icook authorized greenButton" href="javascript:Povar.actions.icook();"
+                           rel="deferredIcook();"><i class="fas fa-utensils"></i> Я приготовил(а)</a></center>
+                                                    <div class="rcpSeeAlso">
+                    <span class="b">Рекомендуем рецепты:</span><br/>
+                                            <a href="/recipes/ovoshnaya_zapravka_na_zimu-76388.html">Овощная заправка на зиму</a>
+                        <br/>
+                                            <a href="/recipes/otbivnye_iz_svininy_na_skovorode-17328.html">Отбивные из свинины на сковороде</a>
+                        <br/>
+                                            <a href="/recipes/ovoshnoe_ragu_s_frikadelkami-49070.html">Овощное рагу с фрикадельками</a>
+                        <br/>
+                                            <a href="/recipes/kruassany_v_stile_yablochnyi_pirog-62090.html">Круассаны в стиле "Яблочный пирог"</a>
+                        <br/>
+                                            <a href="/recipes/pechene_legkoe-27432.html">Печенье легкое</a>
+                        <br/>
+                                    </div>
+                        <div class="addActions"></div>
+            <div class="cleaner"></div>
+            <br/>
+            <span class="yandsimilar_header">Редакция рекомендует:</span>
+<div class="yandsimilar" id="yandsimilar">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+
+         style="display:inline-block;width:608px;height:600px"
+         data-ad-client="ca-pub-0144682968424290"
+         data-ad-slot="3081629924"></ins>
+    <script>
+
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<div class="cleaner"></div>
+	            <div class="cleaner"></div>
+                        <div class="cleaner"></div>
+            			<span class="yandsimilar_header">Подборки рецептов:</span>
+			<div class="yandsimilar" id="similarSuites">
+				<div class="similarstatic">
+						<div><a href="/menu/ovoshnye_salaty/"><img src="https://img.povar.ru/uploads/54/3a/5a/dc/salat_iz_tikvi_i_kliukvi-prv_902.jpg" width="138" height="92" border="0" alt="Салат из тыквы и клюквы"/><br />Овощные салаты</a><span class="innerCount">1350</span></div>
+											<div><a href="/menu/salat_s_fasoliu_i_suharikami/"><img src="https://img.povar.ru/uploads/eb/02/01/3b/salat_iz_suharikov-prv_31774.jpg" width="138" height="92" border="0" alt="Салат из сухариков"/><br />Салат с фасолью и сухариками</a><span class="innerCount">42</span></div>
+											<div><a href="/menu/testo_na_chebureki/"><img src="https://img.povar.ru/uploads/6d/87/20/b6/testo_dlya_cheburekov_v_hlebopechke-prv_75086.jpg" width="138" height="92" border="0" alt="Тесто для чебуреков в хлебопечке"/><br />Тесто на чебуреки</a><span class="innerCount">30</span></div>
+											<div><a href="/menu/vegies_na_grile/"><img src="https://img.povar.ru/uploads/ca/e1/2a/1a/ovoshnoi_miks_na_grile-prv_8533.jpg" width="138" height="92" border="0" alt="Овощной микс на гриле"/><br />Овощи на гриле</a><span class="innerCount">43</span></div>
+					<div class="cleaner"></div>						<div><a href="/menu/vegies_na_mangale/"><img src="https://img.povar.ru/uploads/9c/bc/ba/f6/kartofel_na_mangale-prv_729161.JPG" width="138" height="92" border="0" alt="Картофель на мангале"/><br />Овощи на мангале</a><span class="innerCount">22</span></div>
+											<div><a href="/menu/zapechennye_ovoshi/"><img src="https://img.povar.ru/uploads/f6/93/82/38/zapechennie_kabachki_s_kartofelem-prv_56255.jpg" width="138" height="92" border="0" alt="Запеченные кабачки с картофелем"/><br />Овощи в духовке</a><span class="innerCount">688</span></div>
+											<div><a href="/menu/testo_pirogi_bulochki/"><img src="https://img.povar.ru/uploads/1f/89/93/bd/testo_dlya_pirogov-prv_3057.jpg" width="138" height="92" border="0" alt="Тесто для пирогов"/><br />Тесто для пирогов и булочек</a><span class="innerCount">255</span></div>
+											<div><a href="/menu/ovoshnoe_assorti/"><img src="https://img.povar.ru/uploads/c0/ee/9d/79/assorti_s_patissonami-prv_202906.png" width="138" height="92" border="0" alt="Ассорти с патиссонами"/><br />Овощное ассорти на зиму</a><span class="innerCount">36</span></div>
+					<div class="cleaner"></div>					</div>
+			</div>
+			<div class="cleaner"></div>
+			<br />
+	            <div class="cleaner addComment"></div>
+                                    <span class="add_comment">Добавить свой комментарий:</span><br/>
+                                    <script type="text/javascript">
+                function submitCommentForm() {
+                                        var captcha = jQuery('#captchaString').val();
+                    if (captcha) {
+
+                        checkCaptcha(captcha,
+
+                            function () {
+                                jQuery('div.commentFormActions a.sendBtn, a.answerComment').remove();
+                                jQuery('#commentForm').submit();
+                            },
+
+                            function () {
+                                jQuery('#commentFormWarning').html('<br />Символы с картинки введены неправильно<br />').fadeIn();
+                                jQuery('#commentForm .symbols:first').addClass('red').prev().focus();
+                            }
+                        );
+                    } else {
+                        jQuery('#commentFormWarning').html('<br />Пожалуйста, введите символы с картинки<br />').fadeIn();
+                        jQuery('#commentForm .symbols:first').addClass('red').prev().focus();
+                    }
+                                    }
+            </script>
+
+
+            <form method="post" id="commentForm" action="https://povar.ru/recipes/buryatskie_manty-37991.html#comments">
+                <input type="hidden" name="doittD29W" value="1"/>
+                <div class="doit_comment">
+                    <input type="text" name="author" value=""/>
+                </div>
+                                    <div style="position: relative;">
+                        <br/><input type="text" name="commenter_name" value="" style="margin: 0; width: 167px;">&nbsp;&mdash;&nbsp;введите
+                        ваше имя<br/>
+                        <br/><input type="text" name="captcha" value="" id="captchaString"
+                                    style="margin: 0; width: 167px;">&nbsp;&mdash;&nbsp;<span class="symbols">символы с картинки</span><br/><br/>
+                        <div style="position: absolute; top: 0px; left: 340px"><img class="captchaJPG" src=""/></div>
+                    </div>
+                                                    <div class="ulogin" data-ulogin="display=buttons;redirect_uri=https%3A%2F%2Fpovar.ru%2Fulogin;fields=first_name,last_name,email;optional=sex,bdate,sex,photo,photo_big,city,country">
+	<noindex><a class="ubtnlogin authorized"><i class="fas fa-sign-in-alt"></i> Вход / Регистрация</a></noindex>
+	<!--<span class="ubtn_small_odkl" data-uloginbutton="odnoklassniki"></span>
+	<span class="ubtn_small_vk" data-uloginbutton="vkontakte"></span>
+	<span class="ubtn_small_mail" data-uloginbutton="mailru"></span>
+	<span class="ubtn_small_fb" data-uloginbutton="facebook"></span>-->
+</div>                                <div class="commentAreaWrapper">
+                    <textarea name="comment"
+                              class="commentFormText" id="commentFormText"></textarea><input type="hidden"
+                                                                                             name="detailedAction"
+                                                                                             value="comment"/>
+            </form>
+            <a href="javascript:void(0);" onclick="jQuery('#smileBox').slideToggle('fast');"></a>
+        </div>
+        <div class="cleaner"></div>
+                <div class="smile" id="smileBox"><img src="https://povar.ru/skins/recipie/images/smiles/wub.gif" class="smile" onclick="smile(' :wub: ');" alt=":wub:" title=":wub:" /><img src="https://povar.ru/skins/recipie/images/smiles/wink.gif" class="smile" onclick="smile(' :wink: ');" alt=":wink:" title=":wink:" /><img src="https://povar.ru/skins/recipie/images/smiles/dry.gif" class="smile" onclick="smile(' :dry: ');" alt=":dry:" title=":dry:" /><img src="https://povar.ru/skins/recipie/images/smiles/rolleyes.gif" class="smile" onclick="smile(' :rolleyes: ');" alt=":rolleyes:" title=":rolleyes:" /><img src="https://povar.ru/skins/recipie/images/smiles/ohmy.gif" class="smile" onclick="smile(' :ohmy: ');" alt=":ohmy:" title=":ohmy:" /><img src="https://povar.ru/skins/recipie/images/smiles/blush.gif" class="smile" onclick="smile(' :blush: ');" alt=":blush:" title=":blush:" /><img src="https://povar.ru/skins/recipie/images/smiles/huh.gif" class="smile" onclick="smile(' :huh: ');" alt=":huh:" title=":huh:" /><img src="https://povar.ru/skins/recipie/images/smiles/happy.gif" class="smile" onclick="smile(' :happy: ');" alt=":happy:" title=":happy:" /><img src="https://povar.ru/skins/recipie/images/smiles/cool.gif" class="smile" onclick="smile(' :cool: ');" alt=":cool:" title=":cool:" /><img src="https://povar.ru/skins/recipie/images/smiles/mad.gif" class="smile" onclick="smile(' :mad: ');" alt=":mad:" title=":mad:" /><img src="https://povar.ru/skins/recipie/images/smiles/sad.gif" class="smile" onclick="smile(' :sad: ');" alt=":sad:" title=":sad:" /><img src="https://povar.ru/skins/recipie/images/smiles/ph34r.gif" class="smile" onclick="smile(' :ph34r: ');" alt=":ph34r:" title=":ph34r:" /><img src="https://povar.ru/skins/recipie/images/smiles/unsure.gif" class="smile" onclick="smile(' :unsure: ');" alt=":unsure:" title=":unsure:" /><img src="https://povar.ru/skins/recipie/images/smiles/excl.gif" class="smile" onclick="smile(' :excl: ');" alt=":excl:" title=":excl:" /><img src="https://povar.ru/skins/recipie/images/smiles/sleep.gif" class="smile" onclick="smile(' :sleep: ');" alt=":sleep:" title=":sleep:" /><img src="https://povar.ru/skins/recipie/images/smiles/tongue.gif" class="smile" onclick="smile(' :tongue: ');" alt=":tongue:" title=":tongue:" /><img src="https://povar.ru/skins/recipie/images/smiles/mellow.gif" class="smile" onclick="smile(' :mellow: ');" alt=":mellow:" title=":mellow:" /><img src="https://povar.ru/skins/recipie/images/smiles/biggrin.gif" class="smile" onclick="smile(' :biggrin: ');" alt=":biggrin:" title=":biggrin:" /><img src="https://povar.ru/skins/recipie/images/smiles/angry.gif" class="smile" onclick="smile(' :angry: ');" alt=":angry:" title=":angry:" /><img src="https://povar.ru/skins/recipie/images/smiles/wacko.gif" class="smile" onclick="smile(' :wacko: ');" alt=":wacko:" title=":wacko:" /><img src="https://povar.ru/skins/recipie/images/smiles/blink.gif" class="smile" onclick="smile(' :blink: ');" alt=":blink:" title=":blink:" /><img src="https://povar.ru/skins/recipie/images/smiles/laugh.gif" class="smile" onclick="smile(' :laugh: ');" alt=":laugh:" title=":laugh:" /><img src="https://povar.ru/skins/recipie/images/smiles/smile.gif" class="smile" onclick="smile(' :smile: ');" alt=":smile:" title=":smile:" /></div>
+                <div class="commentFormActions">
+            <span class="red" id="commentFormWarning"
+                  style="display:none;"><br/>Пожалуйста, введите символы с картинки<br/><br/></span>
+            <a href="javascript:void(0);" rel="noindex, nofollow" onclick="Povar.actions.icook(true);"
+               class="popupBtnGreen attachBtn authorized greenButton"><i class="fas fa-camera-retro"></i> Прикрепить
+                фото</a>
+            <a href="javascript:void(0);" rel="noindex, nofollow" onclick="submitCommentForm();"
+               class="popupBtnOrange sendBtn orangeButton"><i class="fas fa-paper-plane"></i> Отправить</a>
+        </div>
+        <div class="cleaner addComment"></div>
+        <a name="comments"></a>
+        <script type="text/javascript">
+
+    jQuery(document).ready(function () {
+        $("a.commentphotos").fancybox({
+            "titleShow": true,
+            "titlePosition": "over",
+            "transitionIn": "fade",
+            "transitionOut": "none",
+            "overlayOpacity": "0.7",
+            "showCloseButton": true,
+            "padding": "0",
+            "modal": false,
+            "centerOnScroll": true,
+            "overlayColor": "#000"
+        });
+    });
+
+    function submitComment(id) {
+        var f = jQuery('#icf' + id);
+                var captcha = jQuery('#captchaString' + id).val();
+        if (captcha) {
+            checkCaptcha(captcha,
+                function () {
+                    jQuery('div.commentFormActions a.sendBtn, a.answerComment').remove();
+                    f.submit();
+                },
+                function () {
+                    f.find('.red:last').html('<br />Символы с картинки введены неправильно<br />').fadeIn();
+                    f.find('.symbols:first').addClass('red').prev().focus();
+                }
+            );
+
+        } else {
+            f.find('.red:last').html('<br />Пожалуйста, введите символы с картинки<br />').fadeIn();
+            f.find('.symbols:first').addClass('red').prev().focus();
+        }
+            }
+
+</script>
+
+<script type="text/javascript">
+    var $comm = jQuery('.user_tip_list>div.row:gt(14), .user_tip_list>div.cleaner:gt(14), .user_tip_list>a:gt(14)');
+    if ($comm.length > 0) {
+        var $hidd = jQuery('#commentsHidden');
+        $comm.appendTo($hidd);
+        $hidd.after('<div class="suiteShowMore">Показать ещё<img src="//img.povar.ru/skins/recipie/images/showmore.png" /></div>');
+        jQuery('div.suiteShowMore').click(function () {
+            var $this = jQuery(this);
+            $hidd.removeClass('displayNone');
+            $this.remove();
+        });
+    }
+    jQuery(document).ready(function () {
+        window.commentInlineLock = 0;
+        jQuery('.answerCommentLink').click(function () {
+            if (window.commentInlineLock) {
+                return false;
+            }
+            window.commentInlineLock = 1;
+            var a = jQuery(this);
+            jQuery('.answerCommentLink:not(:visible)').fadeIn('fast');
+            jQuery('.answerCommentForm:visible').slideUp('fast');
+
+            a.parent().parent().find('.answerCommentForm:first').slideDown('fast', function () {
+                nCmt();
+                a.fadeOut('fast');
+                jQuery(this).find('textarea.answerComment:first').focus();
+                window.commentInlineLock = 0;
+            });
+            return false;
+        });
+    });
+</script>        <div class="cleaner addComment"></div>
+                        <div class="displayNone">
+            <!-- Диалог добавления в книгу -->
+            <div class="addPhoto" id="add2Book">
+                <div class="wndTop"></div>
+                <div class="wndTitle"><span>Добавление рецепта в книгу</span><a class="wndClose"
+                                                                                href="javascript:closeFancyBox();"></a>
+                </div>
+                <div class="wndContentTop"></div>
+                <div class="wndContent form" id="ajaxBookContainer">
+                    <form enctype="multipart/form-data" method="post" id="add2BookForm"
+                          action="/rcpxml/xml_add2book">
+                        <span class="bold">Введите название книги</span><br/>
+                        <input type="text" name="name" value="" class="wndFilePicker" size="54"/><br/><br/>
+                        + <a href="/me/books-a" class="greenLink">Создать кулинарную
+                            книгу</a><br/><br/><br/>
+                    </form>
+                </div>
+                <div class="wndContentSplitter"></div>
+                <div class="wndContent"><a class="wndNext orangeButton" href="javascript:add2Cookbook();">ПРОДОЛЖИТЬ <i
+                                class="fas fa-chevron-right"></i></a></div>
+                <div class="wndFooter"></div>
+            </div>
+            <div class="addPhoto" id="send2friend">
+                <div class="wndTop"></div>
+                <div class="wndTitle"><span>Отправить рецепт другу</span><a class="wndClose"
+                                                                            href="javascript:closeFancyBox();"></a>
+                </div>
+                <div class="wndContentTop"></div>
+                <div class="wndContent form" id="ajaxRcp2FriendContainer"></div>
+                <div class="wndContentSplitter"></div>
+                <div class="wndContent"><a class="wndNext orangeButton" href="javascript:submit2Friend();">ПРОДОЛЖИТЬ <i
+                                class="fas fa-chevron-right"></i></a></div>
+                <div class="wndFooter"></div>
+            </div>
+            <!-- Диалог результата -->
+            <div class="addPhoto" id="statusWnd">
+                <div class="wndTop"></div>
+                <div class="wndTitle"><span>Добавление рецепта в книгу</span><a class="wndClose"
+                                                                                href="javascript:closeFancyBox();"></a>
+                </div>
+                <div class="wndContentTop"></div>
+                <div class="wndContent">
+                    Действие выполнено
+                </div>
+                <div class="wndContentSplitter"></div>
+                <div class="wndContent"><a class="ok orangeButton" href="javascript:closeFancyBox();">OK <i
+                                class="fas fa-chevron-right"></i></a></div>
+                <div class="wndFooter"></div>
+            </div>
+            <a href="#add2Book" class="fancybox" id="add2Cookbook"></a>
+            <a href="#send2friend" class="fancybox" id="send2FriendAnchor"></a>
+            <a href="#statusWnd" class="fancybox" id="statusWndAnchor"></a>
+            <div class="addPhoto" id="voteAgrWnd">
+                <div class="wndTop"></div>
+                <div class="wndTitle"><span>Вы уверены?</span><a class="wndClose"
+                                                                 href="javascript:closeFancyBox();"></a></div>
+                <div class="wndContentTop"></div>
+                <div class="wndContent">
+                    Вы можете отдать свой голос только за 1 рецепт. Вы уверены, что хотите проголосовать именно за
+                    данный рецепт?
+                </div>
+                <div class="wndContentSplitter"></div>
+                <div class="wndContent" id="btnPlace"><a class="wndCancel orangeButton"
+                                                         href="javascript:closeFancyBox();"><i class="fas fa-ban"></i>
+                        ОТМЕНА</a></div>
+                <div class="wndFooter"></div>
+            </div>
+            <a href="#voteAgrWnd" class="fancybox" id="voteAgrWndAnchor"></a>
+            <!-- я приготовил -->
+            <div class="popupWrapper">
+                <div class="popup_yaPrigotovil">
+                    <div class="wrapper povarPopupShadow">
+                        <div class="topPart">
+                            <div class="topPartHeading">Я ПРИГОТОВИЛ(А)</div>
+                            <div class="topPartText">Вам понравилось? Поделитесь с нами своими впечатлениями и
+                                фотографией готового блюда
+                            </div>
+                        </div>
+                        <div class="bottomPart">
+                            <form method="post" id="icookCommentForm" action="https://povar.ru/recipes/buryatskie_manty-37991.html#comments">
+                                <input type="hidden" name="author" value=""/>
+                                <input type="hidden" name="doittD29W" value="1"/>
+                                <input type="hidden" name="detailedAction" value="comment"/>
+                                <input type="hidden" name="asDeferred" value="" id="asDeferredIcook"/>
+                                <textarea class="message" name="comment"></textarea>
+                            </form>
+                            <div class="attach">
+                                <form id="icookImg" enctype="multipart/form-data"
+                                      action="https://img.povar.ru/icook" method="post">
+                                    <input type="hidden" name="id" value=""/>
+                                    <input id="icookImage" type="file" name="image" style="display:none;"/><img
+                                            align="left" id="icookPreview"/>
+                                </form>
+                                <span>JPEG, максимальный размер - 4 мегабайта</span></div>
+                            <div class="popupButtons">
+                                <a href="javascript:void(0);" class="popupBtnGreen greenButton"><i
+                                            class="fas fa-camera-retro"></i> Прикрепить фото</a>
+                                <a href="javascript:void(0);" class="popupBtnOrange orangeButton"><i
+                                            class="fas fa-paper-plane"></i> Отправить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="closeBtn" href="javascript:Povar.popup.hide();"></a>
+                </div>
+            </div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('#icookImage').bind('change', function () {
+                        if (this.files[0] && this.files[0].name) {
+                            if (this.files[0].size > 4194304) {
+                                $('#icookImg')[0].reset();
+                            }
+                            var ext = Povar.utils.getExtension(this.files[0].name);
+                            if ((ext != 'jpg') && (ext != 'jpeg')) {
+                                $('#icookImg')[0].reset();
+                            }
+                        }
+                    });
+                    var icookImage = document.getElementById("icookImage");
+                    var icookPreview = document.getElementById("icookPreview");
+                    Povar.utils.showImagePreview(icookImage, icookPreview, function (name) {
+                        jQuery('.popup_yaPrigotovil .attach span').html(name + '&nbsp;&nbsp;');
+                        jQuery('.popup_yaPrigotovil .attach img').show();
+                    }, function () {
+                        jQuery('.popup_yaPrigotovil .attach span').css({color: '#F00'}).html('JPEG, максимальный размер - 4 мегабайта');
+                        jQuery('.popup_yaPrigotovil .attach img').hide();
+                    });
+                    jQuery('.popup_yaPrigotovil .popupBtnGreen').click(function () {
+                        jQuery('#icookImage').click();
+                    });
+                    jQuery('.popup_yaPrigotovil .popupBtnOrange').click(function () {
+                        var $form = $('#icookCommentForm');
+                        $('#asDeferredIcook').val($('#asDeferred').is(':checked') ? '1' : '');
+                        var $ta = $form.find('textarea').first();
+                        if ($ta.val() == '') {
+                            $('.popup_yaPrigotovil .topPartText').html('Не забудьте поделиться своим мнением о блюде!');
+                            $ta.focus();
+                            return;
+                        }
+                        // проверки размера, типа?
+                        $('.popupButtons').html('Пожалуйста, подождите...');
+                        $form.ajaxSubmit(function (data) {
+                            if (data != "") {
+                                var $imgForm = jQuery('#icookImg');
+                                $imgForm.find('input[name=id]').val(data);
+                                $imgForm.submit();
+                            } else {
+                                window.location.reload();
+                            }
+                        });
+                    });
+                });
+            </script>
+        </div>
+                <script type="text/javascript">
+            jQuery(document).ready(function () {
+                updateFancyBox();
+
+                $('a.good').click(function () {
+                    //if ($(this).hasClass(authorized))  { alert('123');return false;}
+                    var id = $(this).attr('rel');
+                    $('#btnPlace').empty();
+                    $('#btnPlace').append('<a class="wndCancel orangeButton" id="agreeCancel" href="javascript:closeFancyBox();"><i class="fas fa-ban"></i> ОТМЕНА</a>')
+                    $('#btnPlace').append('<a class="ok orangeButton" id="rateIt" onclick="vote4Complink(' + id + ');closeFancyBox();" href="javascript:void(0);">OK <i class="fas fa-chevron-right"></i></a>');
+                    jQuery("#voteAgrWndAnchor").click();
+                });
+
+            });
+
+            function nCmt() {
+                jQuery('#commentForm, .answerCommentForm form').unbind('click focus change').bind('click focus change', function () {
+                    jQuery('img.captchaJPG').attr('src', 'https://povar.ru/captcha.jpg').removeClass('captchaJPG');
+                    var $this = jQuery(this);
+                    if ($this.attr('rel') != 'hash') {
+                        jQuery.post('/notifycomment', {}, function (data) {
+                            jQuery('#commentForm, .answerCommentForm form').attr('rel', 'hash').append('<input type="hidden" name="hash" value="' + data + '" />');
+                        }, 'text');
+                    }
+                });
+            }
+
+            jQuery(document).ready(function () {
+                nCmt();
+                            });
+        </script>
+    </div>
+    </div><div class="rcol">
+	    	    <!-- tad -->
+	    <div style="padding: 10px;">
+    <!-- banner: right_top -->    <div id="gadsense1">
+<center><!-- Yandex.RTB R-A-1268895-14 -->
+<div id="yandex_rtb_R-A-1268895-14"></div> <script>window.yaContextCb.push(()=>{
+Ya.Context.AdvManager.render({ renderTo: 'yandex_rtb_R-A-1268895-14', blockId: 'R-A-1268895-14'
+}) })</script>
+</center>
+</div>
+<!-- /banner: right_top -->
+<!-- 51, 53, 61, 62, 277, 297, 308, 325, 338, 423, 424, 499, 792 --></div>
+	    <!-- /tad -->
+		<div class="top10recipe">
+<span class="h2">Манты - лучшие 10 рецептов</span><ul class="popular"><li><a href="/recipes/manty_s_syrom-79634.html">Манты с сыром</a></li><li><a href="/recipes/manty_s_zeleniu-29972.html">Манты с зеленью</a></li><li><a href="/recipes/manty_rublenye-49444.html">Манты рубленые</a></li><li><a href="/recipes/manty_pochti_vegetarianskie-49458.html">Манты &quot;Почти вегетарианские&quot;</a></li><li><a href="/recipes/manty_pak-choi-49460.html">Манты &quot;Пак-чой&quot;</a></li><li><a href="/recipes/manty_s_govyadinoi_i_tykvoi-71741.html">Манты с говядиной и тыквой</a></li><li><a href="/recipes/mantapur-83521.html">Мантапур</a></li><li><a href="/recipes/tibetskie_pelmeni-75078.html">Тибетские пельмени</a></li><li><a href="/recipes/testo_dlya_mantov_s_myasom-63314.html">Тесто для мантов с мясом</a></li><li><a href="/recipes/manty_s_indeikoi-80215.html">Манты с индейкой</a></li></ul>			
+</div>				<div class="bannerWrapper">
+	    <div style="padding: 10px;">
+    </div>
+	    </div>
+	    	    	    	    <div class="adsense"></div>		<!-- newlinks -->
+		<div class="rightlinks">
+<div class="h4">ПОЛЕЗНОЕ</div>
+                <ul>
+                  <li><a href="/mostnew">Новые рецепты</a><a href="/rss" title="Подписка на новые рецепты портала Повар.ру"><img src="//img.povar.ru/skins/recipie/images/ico16/rss.gif" alt="" width="16" height="16" border="0" class="ico" /></a></li>
+                  <li><a href="/random">Случайный рецепт</a></li>
+				                    <li><a href="/foto-receptov">Фотографии рецептов</a></li>
+                  <li><a href="/books">Кулинарные книги</a></li>
+				  <li><a href="/wiki">Кулинарная энциклопедия</a></li>
+				  <li><a href="/world">Кухни народов мира</a></li>
+				  <li><a href="https://povar.ru/wiki/polza/">Польза и вред продуктов</a></li>
+
+                </ul>
+                <div class="newcounters"></div>
+</div>		<!-- /newlinkssss -->		
+		<div class="adsense"><!-- banner: newSideBar -->    <!--AdFox START-->
+<!--yandex_bantai-->
+<!--Площадка: www.povar.ru / * / *-->
+<!--Тип баннера: povar.ru-sidebar-sticky-300x600-->
+<!--Расположение: sticky sidebar right-->
+<div id="adfox_163147240270516962"></div>
+<script>
+    window.yaContextCb.push(()=>{
+        Ya.adfoxCode.create({
+            ownerId: 388735,
+        containerId: 'adfox_163147240270516962',
+            params: {
+                pp: 'bryh',
+            ps: 'fdsx',
+            p2: 'hiqe'
+            }
+        })
+    })
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+window.sidebarLinksDiv = $('div.rightlinks:first');
+window.setInterval(function() {
+ window.Ya.adfoxCode.reload('adfox_163147240270516962');
+}, 30000);
+$(window).scroll(function()
+{if($(document).scrollTop()>=window.sidebarLinksDiv.offset().top+170) $("#adfox_163147240270516962").parent().addClass('adsense_float');else $("#adfox_163147240270516962").parent().removeClass('adsense_float');});});</script>
+
+<!-- /banner: newSideBar -->
+<!-- 51, 53, 61, 62, 277, 297, 308, 325, 338, 423, 424, 499, 792 --></div>		
+	  </div>            <div class="cleaner"><img src="//img.povar.ru/skins/recipie/../default/images/empty.gif"
+                                      style="width: 1px; height: 1px;"/></div>
+            <div class="perelink" id="perelinkContainer"></div>
+            <script type="text/javascript">
+                jQuery(document).ready(function () {
+                    jQuery('input[type=text],textarea').each(function () {
+                        var $this = jQuery(this);
+                        $this.val($this.val().split('&quot;').join('"'));
+                    });
+                    window.eval(Base64.decode('CgkJCXZhciBwbHQgPSAkKCcjcGVyZWxpbmtUb3AnKTsKCQkJJCgnI3BlcmVsaW5rQ29udGFpbmVyJykuaHRtbChwbHQuaHRtbCgpKTsKCQkJLy9wbHQucmVtb3ZlKCk7CgkJ'));
+                });
+            </script>
+            <div class="cleaner"></div>
+            <div class="footerBanner"><!-- banner: bottom -->    <center><!-- Yandex.RTB R-A-1268895-8 -->
+<div id="yandex_rtb_R-A-1268895-8"></div>
+<script>window.yaContextCb.push(()=>{
+Ya.Context.AdvManager.render({
+renderTo: 'yandex_rtb_R-A-1268895-8',
+blockId: 'R-A-1268895-8'
+})
+})</script>
+<br /></center>
+<noindex><!--Analytics-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67750732-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter24168733 = new Ya.Metrika({
+                    id:24168733,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/24168733" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter --></noindex>
+<!-- /banner: bottom -->
+<!-- 51, 53, 61, 62, 277, 297, 308, 325, 338, 423, 424, 499, 792 --></div>
+            <div class="cleaner"></div>
+        </div>
+
+        <div id="perelinkTop">
+    Все виды соусов из разных стран Мира - эксклюзивная энциклопедия на сайте Повар.ру<br/>
+    <span><a href="https://povar.ru/recipes/krasnaya_ryba_zapechennaya_v_folge-9366.html">как запечь рыбу в фольге</a></span><br/><br/>
+    Все виды специй и приправ из разных стран  Мира - познавательная энциклопедия на сайте Повар.ру<br/>
+    <span><a href="https://povar.ru/recipes/gavaiskaya_picca-3277.html">пицца гавайская</a></span><br/>
+</div>
+
+        <div class="footer" id="footer">
+            		<div class="foot_sitemap" id="sitemapWrapper"></div>
+				            <div class="wrapp" style="position: relative;">
+                <div>2022 <span class="hot">&copy; Повар.ру - Все кулинарные рецепты </span>
+                    <div class="soc_medias_wrapp">
+                        <a href="https://vk.com/vpovare" title="Вконтакте" target="_blank" rel="nofollow"
+                           class="soc_medias vk"></a>
+                        <a href="https://ok.ru/vpovare" title="Одноклассники" target="_blank" rel="nofollow"
+                           class="soc_medias ok"></a>
+                        <a href="https://www.instagram.com/vpovare/" title="Instagram" target="_blank" rel="nofollow"
+                           class="soc_medias in"></a>
+                        <a href="https://www.youtube.com/channel/UCdD_JLMh0tDP7feDU7Onn4g" title="YouTube"
+                           target="_blank" rel="nofollow" class="soc_medias yt"></a>
+                    </div>
+                    <a class="emailcontact" href="mailto:info@povar.ru">info@povar.ru</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- Floating Menu -->
+<script type="text/javascript">
+	jQuery(document).ready(function() {
+		var ffTrigger = function() {
+			if (!window.backgroundBanner && (jQuery('body').width() >= 1240)) {
+				jQuery('#floatingMenu').show();
+				jQuery('#megaContainer').removeClass('megaContainerThin');
+                jQuery('#floatingMenuBanner').show();
+                jQuery('#floatingMenuBannerStart').show();
+			} else {
+				jQuery('#floatingMenu').hide();
+                jQuery('#megaContainer').addClass('megaContainerThin');
+                jQuery('#floatingMenuBanner').hide();
+                jQuery('#floatingMenuBannerStart').hide();
+			}
+		};
+		jQuery(window).resize(ffTrigger);
+		ffTrigger();
+		jQuery('#floatingMenu div:not(.plusTrigger)').each(function() {
+			var $this = jQuery(this);
+			if ($this.height() > 100) {
+				$this.addClass('minified');
+				$this.after('<div class="plusTrigger"><div>...</div>+</div>');
+			}
+		});
+		jQuery('#floatingMenu div.plusTrigger').click(function() {
+			var $this = jQuery(this);
+			$this.prev().removeClass('minified');
+			$this.remove();
+		});
+	});
+</script>
+<div class="floatingMenu" id="floatingMenu">
+	<a class="fmHead" href="/list/goryachie_bliuda/">Горячие блюда</a>
+		<div>
+					<a class="fmItem" href="/list/spagetti/">Спагетти</a>&nbsp;
+					<a class="fmItem" href="/list/kashi/">Каши</a>&nbsp;
+					<a class="fmItem" href="/list/kotlety/">Котлеты</a>&nbsp;
+					<a class="fmItem" href="/list/vareniki/">Вареники</a>&nbsp;
+					<a class="fmItem" href="/list/pelmeni/">Пельмени</a>&nbsp;
+					<a class="fmItem" href="/list/otbivnye/">Отбивные</a>&nbsp;
+					<a class="fmItem" href="/list/omlet/">Омлет</a>&nbsp;
+					<a class="fmItem" href="/list/pasta/">Паста</a>&nbsp;
+					<a class="fmItem" href="/list/yaichnica/">Яичница</a>&nbsp;
+					<a class="fmItem" href="/list/podlivy/">Подлива</a>&nbsp;
+					<a class="fmItem" href="/list/golubcy/">Голубцы</a>&nbsp;
+					<a class="fmItem" href="/list/steyk/">Стейк</a>&nbsp;
+					<a class="fmItem" href="/list/gulyash/">Гуляш</a>&nbsp;
+					<a class="fmItem" href="/list/ragu/">Рагу</a>&nbsp;
+					<a class="fmItem" href="/list/antrekot/">Антрекот</a>&nbsp;
+					<a class="fmItem" href="/list/rostbif/">Ростбиф</a>&nbsp;
+					<a class="fmItem" href="/list/bifshteks/">Бифштекс</a>&nbsp;
+					<a class="fmItem" href="/list/tefteli/">Тефтели</a>&nbsp;
+					<a class="fmItem" href="/list/plov/">Плов</a>&nbsp;
+					<a class="fmItem" href="/list/frikadelki/">Фрикадельки</a>&nbsp;
+					<a class="fmItem" href="/list/zharkoe/">Жаркое</a>&nbsp;
+					<a class="fmItem" href="/list/shnicel/">Шницель</a>&nbsp;
+					<a class="fmItem" href="/list/rulety/">Рулеты</a>&nbsp;
+					<a class="fmItem" href="/list/ravioli/">Равиоли</a>&nbsp;
+					<a class="fmItem" href="/list/zrazy/">Зразы</a>&nbsp;
+					<a class="fmItem" href="/list/karri/">Карри</a>&nbsp;
+					<a class="fmItem" href="/list/lazanya/">Лазанья</a>&nbsp;
+					<a class="fmItem" href="/list/kebab/">Кебаб</a>&nbsp;
+					<a class="fmItem" href="/list/manty/">Манты</a>&nbsp;
+					<a class="fmItem" href="/list/dolma/">Долма</a>&nbsp;
+					<a class="fmItem" href="/list/befstroganov/">Бефстроганов</a>&nbsp;
+					<a class="fmItem" href="/list/beshbarmak/">Бешбармак</a>&nbsp;
+					<a class="fmItem" href="/list/bitochki/">Биточки</a>&nbsp;
+					<a class="fmItem" href="/list/myaso_po_francuzski/">Мясо по-французски</a>&nbsp;
+					<a class="fmItem" href="/list/galushki/">Галушки</a>&nbsp;
+					<a class="fmItem" href="/list/azu/">Азу</a>&nbsp;
+					<a class="fmItem" href="/list/buzhenina/">Буженина</a>&nbsp;
+					<a class="fmItem" href="/list/frikase/">Фрикасе</a>&nbsp;
+					<a class="fmItem" href="/list/lobio/">Лобио</a>&nbsp;
+					<a class="fmItem" href="/list/shashlyk/">Шашлык</a>&nbsp;
+					<a class="fmItem" href="/list/babka/">Бабка</a>&nbsp;
+					<a class="fmItem" href="/list/sote/">Соте</a>&nbsp;
+					<a class="fmItem" href="/list/ratatuy/">Рататуй</a>&nbsp;
+					<a class="fmItem" href="/list/chahohbili/">Чахохбили</a>&nbsp;
+					<a class="fmItem" href="/list/eziki/">Ежики</a>&nbsp;
+					<a class="fmItem" href="/list/mamalyga/">Мамалыга</a>&nbsp;
+					<a class="fmItem" href="/list/shaurma/">Шаурма</a>&nbsp;
+					<a class="fmItem" href="/list/paelya/">Паэлья</a>&nbsp;
+					<a class="fmItem" href="/list/zhuljen/">Жульен</a>&nbsp;
+					<a class="fmItem" href="/list/rizotto/">Ризотто</a>&nbsp;
+					<a class="fmItem" href="/list/karbonara/">Карбонара</a>&nbsp;
+					<a class="fmItem" href="/list/polenta/">Полента</a>&nbsp;
+					<a class="fmItem" href="/list/chanahi/">Чанахи</a>&nbsp;
+					<a class="fmItem" href="/list/fetuchini/">Фетучини</a>&nbsp;
+					<a class="fmItem" href="/list/hashlama/">Хашлама</a>&nbsp;
+					<a class="fmItem" href="/list/hinkali/">Хинкали</a>&nbsp;
+					<a class="fmItem" href="/list/bigus/">Бигус</a>&nbsp;
+					<a class="fmItem" href="/list/romshteks/">Ромштекс</a>&nbsp;
+					<a class="fmItem" href="/list/langet/">Лангет</a>&nbsp;
+					<a class="fmItem" href="/list/brizol/">Бризоль</a>&nbsp;
+				</div>
+	<a class="fmHead" href="/list/salad/">Салаты</a>
+		<div>
+					<a class="fmItem" href="/list/salat_cezar/">Салат Цезарь</a>&nbsp;
+					<a class="fmItem" href="/list/salat_grecheskiy/">Салат Греческий</a>&nbsp;
+					<a class="fmItem" href="/list/salat_olivye/">Салат Оливье</a>&nbsp;
+					<a class="fmItem" href="/list/vinegret/">Винегрет</a>&nbsp;
+					<a class="fmItem" href="/list/salat_mimoza/">Салат Мимоза</a>&nbsp;
+					<a class="fmItem" href="/list/granatovy_braslet/">Салат Гранатовый браслет</a>&nbsp;
+					<a class="fmItem" href="/list/salat_gnezdo_gluharya/">Салат Гнездо глухаря</a>&nbsp;
+					<a class="fmItem" href="/list/salat_nezhnost/">Салат Нежность</a>&nbsp;
+				</div>
+	<a class="fmHead" href="/list/zakuski/">Закуски</a>
+		<div>
+					<a class="fmItem" href="/list/zakuski_i_buterbrody/">Бутерброды</a>&nbsp;
+					<a class="fmItem" href="/list/kanape/">Канапе</a>&nbsp;
+					<a class="fmItem" href="/list/grenki/">Гренки</a>&nbsp;
+					<a class="fmItem" href="/list/frittata/">Фриттата</a>&nbsp;
+					<a class="fmItem" href="/list/krokety/">Крокеты</a>&nbsp;
+					<a class="fmItem" href="/list/musaka/">Мусака</a>&nbsp;
+					<a class="fmItem" href="/list/popkorn/">Попкорн</a>&nbsp;
+					<a class="fmItem" href="/list/holodec/">Холодец</a>&nbsp;
+					<a class="fmItem" href="/list/brusketta/">Брускетта</a>&nbsp;
+					<a class="fmItem" href="/list/tosty/">Тосты</a>&nbsp;
+					<a class="fmItem" href="/list/takos/">Такос</a>&nbsp;
+					<a class="fmItem" href="/list/tartaletki/">Тарталетки</a>&nbsp;
+					<a class="fmItem" href="/list/pashtety/">Паштеты</a>&nbsp;
+					<a class="fmItem" href="/list/burgery/">Бургеры</a>&nbsp;
+					<a class="fmItem" href="/list/chipsy/">Чипсы</a>&nbsp;
+					<a class="fmItem" href="/list/rolly/">Роллы</a>&nbsp;
+					<a class="fmItem" href="/list/humus/">Хумус</a>&nbsp;
+					<a class="fmItem" href="/list/hot_dog/">Хот-дог</a>&nbsp;
+					<a class="fmItem" href="/list/palochki/">Палочки</a>&nbsp;
+					<a class="fmItem" href="/list/tortilya/">Тортилья</a>&nbsp;
+					<a class="fmItem" href="/list/balyk/">Балык</a>&nbsp;
+					<a class="fmItem" href="/list/zalivnoe/">Заливное</a>&nbsp;
+					<a class="fmItem" href="/list/forshmak/">Форшмак</a>&nbsp;
+					<a class="fmItem" href="/list/kesadilja/">Кесадилья</a>&nbsp;
+					<a class="fmItem" href="/list/basturma/">Бастурма</a>&nbsp;
+					<a class="fmItem" href="/list/sendvich/">Сэндвич</a>&nbsp;
+					<a class="fmItem" href="/list/tartar/">Тартар</a>&nbsp;
+				</div>
+	<a class="fmHead" href="/list/soup/">Супы</a>
+		<div>
+					<a class="fmItem" href="/list/supy_pure/">Супы-пюре</a>&nbsp;
+					<a class="fmItem" href="/list/holodnye_supy/">Холодные супы</a>&nbsp;
+					<a class="fmItem" href="/list/bulyony/">Бульоны</a>&nbsp;
+					<a class="fmItem" href="/list/okroshka/">Окрошка</a>&nbsp;
+					<a class="fmItem" href="/list/uha/">Уха</a>&nbsp;
+					<a class="fmItem" href="/list/shi/">Щи</a>&nbsp;
+					<a class="fmItem" href="/list/solanka/">Солянка</a>&nbsp;
+					<a class="fmItem" href="/list/ministrone/">Минестроне</a>&nbsp;
+					<a class="fmItem" href="/list/gaspacho/">Гаспачо</a>&nbsp;
+					<a class="fmItem" href="/list/borsh/">Борщ</a>&nbsp;
+					<a class="fmItem" href="/list/rassolnik/">Рассольник</a>&nbsp;
+					<a class="fmItem" href="/list/holodnik/">Холодник</a>&nbsp;
+					<a class="fmItem" href="/list/svekolnik/">Свекольник</a>&nbsp;
+					<a class="fmItem" href="/list/harcho/">Харчо</a>&nbsp;
+					<a class="fmItem" href="/list/shurpa/">Шурпа</a>&nbsp;
+					<a class="fmItem" href="/list/lagman/">Лагман</a>&nbsp;
+					<a class="fmItem" href="/list/kapustnyak/">Капустняк</a>&nbsp;
+					<a class="fmItem" href="/list/krem_sup/">Крем-суп</a>&nbsp;
+					<a class="fmItem" href="/list/bozbash/">Бозбаш</a>&nbsp;
+					<a class="fmItem" href="/list/pohlebki/">Похлебки</a>&nbsp;
+				</div>
+	<a class="fmHead" href="/list/vypechka/">Выпечка</a>
+		<div>
+					<a class="fmItem" href="/list/pirogi_pirozhki/">Пироги</a>&nbsp;
+					<a class="fmItem" href="/list/torty_pirozhnye/">Торты</a>&nbsp;
+					<a class="fmItem" href="/list/bliny/">Блины</a>&nbsp;
+					<a class="fmItem" href="/list/picca/">Пицца</a>&nbsp;
+					<a class="fmItem" href="/list/pechene/">Печенье</a>&nbsp;
+					<a class="fmItem" href="/list/hleb/">Хлеб</a>&nbsp;
+					<a class="fmItem" href="/list/oladi/">Оладьи</a>&nbsp;
+					<a class="fmItem" href="/list/keks/">Кексы</a>&nbsp;
+					<a class="fmItem" href="/list/glazur/">Глазурь</a>&nbsp;
+					<a class="fmItem" href="/list/pirozhki/">Пирожки</a>&nbsp;
+					<a class="fmItem" href="/list/pirozhnye/">Пирожное</a>&nbsp;
+					<a class="fmItem" href="/list/syrniki/">Сырники</a>&nbsp;
+					<a class="fmItem" href="/list/maffiny/">Маффины</a>&nbsp;
+					<a class="fmItem" href="/list/bulochki/">Булочки</a>&nbsp;
+					<a class="fmItem" href="/list/brauni/">Брауни</a>&nbsp;
+					<a class="fmItem" href="/list/biskvit/">Бисквит</a>&nbsp;
+					<a class="fmItem" href="/list/kish/">Киш</a>&nbsp;
+					<a class="fmItem" href="/list/zapekanki/">Запеканка</a>&nbsp;
+					<a class="fmItem" href="/list/vafli/">Вафли</a>&nbsp;
+					<a class="fmItem" href="/list/ponchiki/">Пончики</a>&nbsp;
+					<a class="fmItem" href="/list/sharlotka/">Шарлотка</a>&nbsp;
+					<a class="fmItem" href="/list/chizkeyk/">Чизкейк</a>&nbsp;
+					<a class="fmItem" href="/list/sufle/">Суфле</a>&nbsp;
+					<a class="fmItem" href="/list/vatrushki/">Ватрушки</a>&nbsp;
+					<a class="fmItem" href="/list/lepeshki/">Лепешки</a>&nbsp;
+					<a class="fmItem" href="/list/pryaniki/">Пряники</a>&nbsp;
+					<a class="fmItem" href="/list/shtrudeli/">Штрудели</a>&nbsp;
+					<a class="fmItem" href="/list/fokacha/">Фокачча</a>&nbsp;
+					<a class="fmItem" href="/list/tarty/">Тарты</a>&nbsp;
+					<a class="fmItem" href="/list/kurnik/">Курник</a>&nbsp;
+					<a class="fmItem" href="/list/rogaliki/">Рогалики</a>&nbsp;
+					<a class="fmItem" href="/list/sloyki/">Слойки</a>&nbsp;
+					<a class="fmItem" href="/list/hachapuri/">Хачапури</a>&nbsp;
+					<a class="fmItem" href="/list/korzhiki/">Коржики</a>&nbsp;
+					<a class="fmItem" href="/list/volovany/">Волованы</a>&nbsp;
+					<a class="fmItem" href="/list/vertuta/">Вертута</a>&nbsp;
+					<a class="fmItem" href="/list/biskotti/">Бискотти</a>&nbsp;
+					<a class="fmItem" href="/list/achma/">Ачма</a>&nbsp;
+					<a class="fmItem" href="/list/belyashi/">Беляши</a>&nbsp;
+					<a class="fmItem" href="/list/kulebyaka/">Кулебяка</a>&nbsp;
+					<a class="fmItem" href="/list/pahlava/">Пахлава</a>&nbsp;
+					<a class="fmItem" href="/list/profitroli/">Профитроли</a>&nbsp;
+					<a class="fmItem" href="/list/eklery/">Эклеры</a>&nbsp;
+					<a class="fmItem" href="/list/kruassany/">Круассаны</a>&nbsp;
+					<a class="fmItem" href="/list/trubochki/">Трубочки</a>&nbsp;
+					<a class="fmItem" href="/list/mannik/">Манник</a>&nbsp;
+					<a class="fmItem" href="/list/nalistniki/">Налистники</a>&nbsp;
+					<a class="fmItem" href="/list/baget/">Багет</a>&nbsp;
+					<a class="fmItem" href="/list/pliushki/">Плюшки</a>&nbsp;
+					<a class="fmItem" href="/list/tvorozhniki/">Творожники</a>&nbsp;
+					<a class="fmItem" href="/list/kapkeyk/">Капкейк</a>&nbsp;
+					<a class="fmItem" href="/list/krekery/">Крекеры</a>&nbsp;
+					<a class="fmItem" href="/list/chebureki/">Чебуреки</a>&nbsp;
+					<a class="fmItem" href="/list/blinchiki/">Блинчики</a>&nbsp;
+					<a class="fmItem" href="/list/korzinochki/">Корзиночки</a>&nbsp;
+					<a class="fmItem" href="/list/hvorost/">Хворост</a>&nbsp;
+					<a class="fmItem" href="/list/keksiki/">Кексики</a>&nbsp;
+					<a class="fmItem" href="/list/baursaki/">Баурсаки</a>&nbsp;
+					<a class="fmItem" href="/list/pankeiki/">Панкейки</a>&nbsp;
+					<a class="fmItem" href="/list/samsa/">Самса</a>&nbsp;
+					<a class="fmItem" href="/list/kovrizhka/">Коврижка</a>&nbsp;
+					<a class="fmItem" href="/list/bubliki/">Бублики</a>&nbsp;
+					<a class="fmItem" href="/list/galety/">Галеты</a>&nbsp;
+				</div>
+	<a class="fmHead" href="/list/dessert/">Десерты</a>
+		<div>
+					<a class="fmItem" href="/list/konfety/">Конфеты</a>&nbsp;
+					<a class="fmItem" href="/list/muss/">Мусс</a>&nbsp;
+					<a class="fmItem" href="/list/zhele/">Желе</a>&nbsp;
+					<a class="fmItem" href="/list/marmelad/">Мармелад</a>&nbsp;
+					<a class="fmItem" href="/list/morozhenoe/">Мороженое</a>&nbsp;
+					<a class="fmItem" href="/list/puding/">Пудинг</a>&nbsp;
+					<a class="fmItem" href="/list/sirop/">Сироп</a>&nbsp;
+					<a class="fmItem" href="/list/krem/">Крем</a>&nbsp;
+					<a class="fmItem" href="/list/beze/">Безе</a>&nbsp;
+					<a class="fmItem" href="/list/zefir/">Зефир</a>&nbsp;
+					<a class="fmItem" href="/list/sorbet/">Сорбет</a>&nbsp;
+					<a class="fmItem" href="/list/kutya/">Кутья</a>&nbsp;
+					<a class="fmItem" href="/list/tiramisu/">Тирамису</a>&nbsp;
+					<a class="fmItem" href="/list/pastila/">Пастила</a>&nbsp;
+					<a class="fmItem" href="/list/bekmes/">Бекмес</a>&nbsp;
+					<a class="fmItem" href="/list/iriski/">Ириски</a>&nbsp;
+					<a class="fmItem" href="/list/halva/">Халва</a>&nbsp;
+				</div>
+	<a class="fmHead" href="/list/napitki/">Напитки</a>
+		<div>
+					<a class="fmItem" href="/list/alkogolnye/">Алкогольные</a>&nbsp;
+					<a class="fmItem" href="/list/fruktovye/">Фруктовые</a>&nbsp;
+					<a class="fmItem" href="/list/molochnye/">Молочные</a>&nbsp;
+					<a class="fmItem" href="/list/gazirovannye/">Газированные</a>&nbsp;
+					<a class="fmItem" href="/list/cocktail/">Коктейли</a>&nbsp;
+					<a class="fmItem" href="/list/chay/">Чай</a>&nbsp;
+					<a class="fmItem" href="/list/kompoty/">Компоты</a>&nbsp;
+					<a class="fmItem" href="/list/kiseli/">Кисели</a>&nbsp;
+					<a class="fmItem" href="/list/smuzi/">Смузи</a>&nbsp;
+					<a class="fmItem" href="/list/kvas/">Квас</a>&nbsp;
+					<a class="fmItem" href="/list/kofe/">Кофе</a>&nbsp;
+					<a class="fmItem" href="/list/punshi/">Пунши</a>&nbsp;
+					<a class="fmItem" href="/list/mors/">Морс</a>&nbsp;
+					<a class="fmItem" href="/list/soki/">Соки</a>&nbsp;
+					<a class="fmItem" href="/list/limonad/">Лимонад</a>&nbsp;
+					<a class="fmItem" href="/list/sbiten/">Сбитень</a>&nbsp;
+					<a class="fmItem" href="/list/airan/">Айран</a>&nbsp;
+				</div>
+	<a class="fmHead" href="/list/sousy/">Соусы</a>
+		<div>
+					<a class="fmItem" href="/list/sous_k_myasu/">К мясу</a>&nbsp;
+					<a class="fmItem" href="/list/sous_k_ptice/">К птице</a>&nbsp;
+					<a class="fmItem" href="/list/sous_k_rybe/">К рыбе</a>&nbsp;
+					<a class="fmItem" href="/list/sous_k_salatu/">К салату</a>&nbsp;
+					<a class="fmItem" href="/list/soevyj_sous/">Соевый соус</a>&nbsp;
+					<a class="fmItem" href="/list/teriyaki/">Терияки</a>&nbsp;
+					<a class="fmItem" href="/list/zapravki_dlya_salatov/">Заправки для салатов</a>&nbsp;
+					<a class="fmItem" href="/list/dipy/">Дипы</a>&nbsp;
+					<a class="fmItem" href="/list/pesto/">Песто</a>&nbsp;
+					<a class="fmItem" href="/list/salsa/">Сальса</a>&nbsp;
+					<a class="fmItem" href="/list/tomatnyj_sous/">Томатный соус</a>&nbsp;
+					<a class="fmItem" href="/list/chesnochnyj_sous/">Чесночный соус</a>&nbsp;
+					<a class="fmItem" href="/list/sousy_na_zimu/">Соусы на зиму</a>&nbsp;
+					<a class="fmItem" href="/list/sous_gribnoy/">Грибной соус</a>&nbsp;
+					<a class="fmItem" href="/list/sous_syrnyj/">Соус сырный</a>&nbsp;
+					<a class="fmItem" href="/list/sacivi/">Сациви</a>&nbsp;
+					<a class="fmItem" href="/list/chatni/">Чатни</a>&nbsp;
+					<a class="fmItem" href="/list/tkemali/">Ткемали</a>&nbsp;
+					<a class="fmItem" href="/list/smetannyj_sous/">Сметанный соус</a>&nbsp;
+					<a class="fmItem" href="/list/marinady/">Маринады</a>&nbsp;
+					<a class="fmItem" href="/list/sous_tartar/">Соус Тартар</a>&nbsp;
+					<a class="fmItem" href="/list/beshamel/">Соус Бешамель</a>&nbsp;
+					<a class="fmItem" href="/list/gorchica/">Горчица</a>&nbsp;
+					<a class="fmItem" href="/list/ketchup/">Кетчуп</a>&nbsp;
+					<a class="fmItem" href="/list/vasabi/">Васаби</a>&nbsp;
+					<a class="fmItem" href="/list/tomatnaja_pasta/">Томатная паста</a>&nbsp;
+					<a class="fmItem" href="/list/sous_dla_pizza/">Соус для пиццы</a>&nbsp;
+				</div>
+	<a class="fmHead" href="/list/zagotovki/">Заготовки</a>
+		<div>
+					<a class="fmItem" href="/list/varenya_i_dzhemy/">Варенье</a>&nbsp;
+					<a class="fmItem" href="/list/marinovanie/">Маринование</a>&nbsp;
+					<a class="fmItem" href="/list/dzemy/">Джемы</a>&nbsp;
+					<a class="fmItem" href="/list/solenie/">Соление</a>&nbsp;
+					<a class="fmItem" href="/list/kvashenie/">Квашение</a>&nbsp;
+					<a class="fmItem" href="/list/konservaciya/">Консервация</a>&nbsp;
+					<a class="fmItem" href="/list/povidlo/">Повидло</a>&nbsp;
+					<a class="fmItem" href="/list/konfitur/">Конфитюр</a>&nbsp;
+					<a class="fmItem" href="/list/lecho/">Лечо</a>&nbsp;
+					<a class="fmItem" href="/list/adzhika/">Аджика</a>&nbsp;
+				</div>
+</div>
+<div id="floatingMenuBannerStart" style="float: left; width: 240px; height: 10px;"></div>
+<div id="floatingMenuBanner" style="float: left; width: 240px; padding-top: 10px; padding-right:1px;">
+    <!-- banner: floating_menu_bottom -->    <!--AdFox START--> 
+<!--yandex_bantai--> 
+<!--Площадка: www.povar.ru / * / *--> 
+<!--Тип баннера: povar.ru-sidebar-sticky-240x400-left-side--> 
+<!--Расположение: sticky sidebar left--> 
+<div id="adfox_163161769802362326"></div> 
+<script> 
+    window.yaContextCb.push(()=>{ 
+        Ya.adfoxCode.create({ 
+            ownerId: 388735, 
+        containerId: 'adfox_163161769802362326', 
+            params: { 
+                pp: 'bryg', 
+            ps: 'fdsx', 
+            p2: 'hiqd' 
+            } 
+        }) 
+    }) 
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+window.fbarLinksDiv = $('#floatingMenuBanner');
+window.fbarLinksStartDiv = $('#floatingMenuBannerStart');
+window.setInterval(function() {
+ window.Ya.adfoxCode.reload('adfox_163161769802362326');
+}, 30000);
+$(window).scroll(function()
+{if($(document).scrollTop()>=window.fbarLinksStartDiv.offset().top+170) fbarLinksDiv.addClass('adsense_float');else fbarLinksDiv.removeClass('adsense_float');});});</script>
+<!-- /banner: floating_menu_bottom -->
+<!-- 51, 53, 61, 62, 277, 297, 308, 325, 338, 423, 424, 499, 792 --></div>
+<!-- /Floating Menu -->    <div class="cleaner"></div>
+</div>
+<div id="dev_indicator"></div>
+<div id="vk_subscribePupup">&uarr;</div>
+
+<script type="text/javascript">
+
+    jQuery('#vk_subscribePupup').click(function () {
+        jQuery('html, body').animate({'scrollTop': 0}, 500, 'swing', function () {
+            window.scrollTo(0, 0);
+        });
+    });
+    $(window).scroll(function () {
+        if ($(document).scrollTop() >= 700) $("#vk_subscribePupup").fadeIn(); else $("#vk_subscribePupup").fadeOut();
+    });
+
+    document.oncopy = function () {
+        var bodyElement = document.body;
+        var selection = getSelection();
+        var href = document.location.href;
+        var copyright = ' Подробнее: ' + href;
+        var text = selection + copyright;
+        var divElement = document.createElement('div');
+        divElement.style.position = 'absolute';
+        divElement.style.left = '-99999px';
+        text1 = document.createTextNode(text); //создал текстовый узел
+        divElement.appendChild(text1); //и добавил его
+        bodyElement.appendChild(divElement);
+        selection.selectAllChildren(divElement);
+        setTimeout(function () {
+            bodyElement.removeChild(divElement);
+        }, 0);
+    };
+</script>
+<div class="displayNever">
+    </div>
+<link href="//img.povar.ru/skins/recipie/../../js/jquery/fancybox/jquery.fancybox-1.3.0.css" rel="stylesheet" type="text/css" property="stylesheet" >
+<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css" property="stylesheet" >
+<link href="//img.povar.ru/skins/recipie/frontend.css" rel="stylesheet" type="text/css" property="stylesheet" >
+<link href="//img.povar.ru/skins/recipie/additional.css" rel="stylesheet" type="text/css" property="stylesheet" >
+<link href="//img.povar.ru/skins/recipie/favicon.svg" rel="SHORTCUT ICON" type="image/svg" >
+<link href="/rss" rel="alternate" type="application/rss+xml" title="Подписка на новые рецепты портала Повар.ру" >
+<link href="//img.povar.ru/skins/recipie/slvratrcp.css" rel="stylesheet" type="text/css" property="stylesheet" >
+<link href="//img.povar.ru/skins/recipie/povar.css" rel="stylesheet" type="text/css" property="stylesheet" >
+
+<link rel="stylesheet" href="//img.povar.ru/skins/recipie/../../skins/recipie/fa/css/all.min.css">
+
+<script type="text/javascript" src="//img.povar.ru/skins/recipie/../../js/jquery/maxlength/jquery.maxlength-min.js"></script>
+<script type="text/javascript" src="//img.povar.ru/skins/recipie/../../js/jquery/form/jquery.form.js"></script>
+<script type="text/javascript" src="https://povar.ru/rcpxml/ajax.js"></script>
+<script type="text/javascript" src="//img.povar.ru/skins/recipie/../../js/jquery/fancybox/jquery.mousewheel-3.0.2.pack.js"></script>
+<script type="text/javascript" src="//img.povar.ru/skins/recipie/../../js/jquery/fancybox/jquery.fancybox-1.3.0.pack.js"></script>
+<script type="text/javascript">
+    //<!--
+function closeFancyBox() {jQuery.fancybox.close();}    //-->
+</script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+<script type="text/javascript" src="//img.povar.ru/skins/recipie/../../js/base64.js"></script>
+<script type="text/javascript" src="//img.povar.ru/skins/recipie/../../js/jquery/jquery.showmessage.min.js"></script>
+<script type="text/javascript" src="//img.povar.ru/skins/recipie/../../js/login.js"></script>
+<script type="text/javascript" src="//img.povar.ru/skins/recipie/../../js/hashcode.js"></script>
+<script type="text/javascript" src="//img.povar.ru/skins/recipie/../../js/copyright.js"></script>
+<script type="text/javascript" src="//img.povar.ru/skins/recipie/../../js/jquery/jquery.cookie.js"></script>
+<script type="text/javascript" src="https://povar.ru/js/jquery/slvrating/slvrating.js"></script>
+<script type="text/javascript">
+    //<!--
+jQuery(document).ready(function () { jQuery("div.slvRating").slvRatingDisplay(); });    //-->
+</script>
+<script type="text/javascript" src="//img.povar.ru/skins/recipie/../../js/povar.js"></script>
+<script type="text/javascript" src="https://povar.ru/js/jquery/resize/jquery.ba-resize.min.js"></script>
+<script type="text/javascript" src="https://povar.ru/js/footer.js"></script><script type="text/javascript">
+    var href = jQuery.cookie('deferredAfterLogin');
+    if (href) {
+        jQuery.cookie('deferredAfterLogin', null);
+        window.location = href;
+    }
+    $.each(document.images, function () {
+        var $this_image = $(this);
+        var src = $this_image.attr('src') || '';
+        if (!this.complete && (src.length > 0)) {
+            $this_image.attr('lsrc', src);
+            $this_image.attr('src', 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');
+        }
+    });
+    $(function () {
+        $.each(document.images, function () {
+            var $this_image = $(this);
+            var this_image = this;
+            var lsrc = $this_image.attr('lsrc') || '';
+            if (lsrc.length > 0) {
+                var img = new Image();
+                img.src = lsrc;
+                $(img).load(function () {
+                    $this_image.css('opacity', 0);
+                    this_image.src = lsrc;
+                    $this_image.animate({
+                        opacity: '1',
+                    });
+                });
+            }
+        });
+        $("#searchInput").autocomplete({
+            delay: 1000,
+            minLength: 3,
+            select: function (event, ui) {
+                $('#searchInput').val(ui.item.value);
+                $('#search').submit();
+                return false;
+            },
+            source: function (request, response) {
+                $.ajax({
+                    url: '//sautocomplete.povar.ru',
+                    method: 'POST',
+                    data: {
+                        text: request.term
+                    },
+                    success: function (data) {
+                        if (data.result) {
+                            response(data.words);
+                        } else {
+                            response([]);
+                        }
+                    }
+                });
+            }
+        });
+    });
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.eu01.nr-data.net","licenseKey":"b825e175f6","applicationID":"121051221","transactionName":"MhBSZQoZC0NUAEEKWAtacVIMEQpeGhFQAF4VHFUeERYBVU1MUQZDBBxcVBw=","queueTime":0,"applicationTime":136,"atts":"HldRE0IDGE0=","errorBeacon":"bam.eu01.nr-data.net","agent":""}</script></body>
+</html>
